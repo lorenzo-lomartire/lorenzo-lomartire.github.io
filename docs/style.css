@@ -1,0 +1,34 @@
+body[theme="light"] {
+	background: white;
+	color: black;
+	& a {
+		color: blue;
+	}
+}
+body[theme="dark"] {
+	background: black;
+	color: white;
+	& a {
+		color: yellow;
+	}
+}
+preload {
+	display: none;
+	img {
+		display: none;
+	};
+}
+nav {
+	height: 3em;
+	width: 100%
+}
+button.icon {
+	width: 3em;
+	height: 3em;
+	background: none;
+	border: none;
+}
+footer {
+	position: fixed;
+	bottom: 0;
+}
