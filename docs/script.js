@@ -24,11 +24,11 @@ function switchTheme() {
 	theme('light');
 }
 function switchLang() {
-	if (document.documentElement.lang === 'en') {
+	if (document.documentElement.getAttribute('lang') === 'en') {
 		lang('it');
 		return;
 	}
-	if (document.documentElement.lang === 'it') {
+	if (document.documentElement.getAttribute('lang') === 'it') {
 		lang('en');
 		return;
 	}
