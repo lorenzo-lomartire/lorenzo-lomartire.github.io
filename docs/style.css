@@ -20,7 +20,7 @@ body[theme="dark"] {
 	& a,button.url {
 		color: yellow;
 	}
-	& button.icon img {
+	& button.icon img.mono {
 		filter: invert(1);
 	}
 	& nav {
