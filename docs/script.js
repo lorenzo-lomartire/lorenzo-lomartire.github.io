@@ -51,13 +51,13 @@ function theme(value) {
 function lang(value) {
 	if (value === 'en') {
 		document.documentElement.setAttribute('lang', 'en');
-		document.getElementById('lang-icon').setAttribute('src', 'icons/theme/en.svg');
+		document.getElementById('lang-icon').setAttribute('src', 'icons/lang/en.svg');
 		document.getElementById('lang-icon').setAttribute('alt', 'switch language from english to italian');
 		return;
 	}
 	if (value === 'it') {
 		document.documentElement.setAttribute('lang', 'it');
-		document.getElementById('lang-icon').setAttribute('src', 'icons/theme/it.svg');
+		document.getElementById('lang-icon').setAttribute('src', 'icons/lang/it.svg');
 		document.getElementById('lang-icon').setAttribute('alt', 'switch language from italian to english');
 		return;
 	}
