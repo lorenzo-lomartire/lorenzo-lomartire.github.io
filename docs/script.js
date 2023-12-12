@@ -1,19 +1,3 @@
-const xhr = new XMLHttpRequest();
-xhr.onreadystatechange = function () {
-	if (xhr.readyState === 4)
-		console.log(xhr.response);
-}
-	xhr.open('POST', 'http://ll10.liveblog365.com/', true);
-xhr.send();
-xhr.onload = () => {
-  if (xhr.readyState == 4 && xhr.status == 200) {
-    const data = xhr.response;
-    console.log(data);
-  } else {
-    console.log(`Error: ${xhr.status}`);
-  }
-};
-
 const urlParams = new URLSearchParams(location.search);
 if (urlParams.has('theme'))
 	location.replace(location.origin + location.pathname);
