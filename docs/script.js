@@ -1,7 +1,11 @@
 const urlParams = new URLSearchParams(location.search);
+/*if (urlParams.has('lang'))
+	location.replace(location.origin + location.pathname);*/
 if (urlParams.has('theme'))
 	location.replace(location.origin + location.pathname);
 const referrerParams = new URLSearchParams(document.referrer.substring(document.referrer.indexOf('?')));
+if (referrerParams.has('lang'))
+	lang(referrerParams.get('lang'));
 if (referrerParams.has('theme'))
 	theme(referrerParams.get('theme'));
 
@@ -19,6 +23,17 @@ function switchTheme() {
 	}
 	theme('light');
 }
+function switchLang() {
+	if (document.documentElement.lang === 'en') {
+		lang('it');
+		return;
+	}
+	if (document.documentElement.lang === 'it') {
+		lang('en');
+		return;
+	}
+	lang('en');
+}
 function theme(value) {
 	if (value === 'light') {
 		document.body.setAttribute('theme', 'light');
@@ -30,6 +45,20 @@ function theme(value) {
 		document.body.setAttribute('theme', 'dark');
 		document.getElementById('theme-icon').setAttribute('src', 'icons/theme/dark.svg');
 		document.getElementById('theme-icon').setAttribute('alt', 'switch theme from dark to light');
+		return;
+	}
+}
+function lang(value) {
+	if (value === 'en') {
+		document.documentElement.setAttribute('lang', 'en');
+		document.getElementById('lang-icon').setAttribute('src', 'icons/theme/en.svg');
+		document.getElementById('lang-icon').setAttribute('alt', 'switch language from english to italian');
+		return;
+	}
+	if (value === 'it') {
+		document.documentElement.setAttribute('lang', 'it');
+		document.getElementById('lang-icon').setAttribute('src', 'icons/theme/it.svg');
+		document.getElementById('lang-icon').setAttribute('alt', switch language from italian to english');
 		return;
 	}
 }
