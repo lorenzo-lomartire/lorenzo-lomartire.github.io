@@ -7,7 +7,7 @@ body[theme = "light"] {
 	& a,button.url {
 		color: blue;
 	}
-	& button.icon img.black {
+	& button.icon img.mono {
 		filter: invert(0);
 	}
 	& nav {
