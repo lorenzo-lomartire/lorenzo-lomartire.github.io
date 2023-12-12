@@ -58,7 +58,7 @@ function lang(value) {
 	if (value === 'it') {
 		document.documentElement.setAttribute('lang', 'it');
 		document.getElementById('lang-icon').setAttribute('src', 'icons/theme/it.svg');
-		document.getElementById('lang-icon').setAttribute('alt', switch language from italian to english');
+		document.getElementById('lang-icon').setAttribute('alt', 'switch language from italian to english');
 		return;
 	}
 }
