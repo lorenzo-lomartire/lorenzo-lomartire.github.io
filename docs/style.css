@@ -1,30 +1,51 @@
-body[theme="light"] {
+:root {
+	font-size: 16px;
+}
+body[theme = "light"] {
 	background: white;
 	color: black;
-	& a {
+	& a,button.url {
 		color: blue;
+	}
+	& button.icon img {
+		filter: invert(0);
+	}
+	& nav {
+		border-bottom: 1px solid black;
 	}
 }
 body[theme="dark"] {
 	background: black;
 	color: white;
-	& a {
+	& a,button.url {
 		color: yellow;
+	}
+	& button.icon img {
+		filter: invert(1);
+	}
+	& nav {
+		border-bottom: 1px solid white;
 	}
 }
 preload {
 	display: none;
-	img {
-		display: none;
-	};
 }
 nav {
-	height: 3em;
-	width: 100%
+	position: sticky;
+	top: 0;
+	height: 2.5rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
 }
 button.icon {
-	width: 3em;
-	height: 3em;
+	width: 2.5rem;
+	height: 2.5rem;
+	background: none;
+	border: none;
+}
+button.url {
+	height: 2.5rem;
 	background: none;
 	border: none;
 }
