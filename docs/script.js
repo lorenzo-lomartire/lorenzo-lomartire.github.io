@@ -22,13 +22,13 @@ function switchTheme() {
 function theme(value) {
 	if (value === 'light') {
 		document.body.setAttribute('theme', 'light');
-		document.getElementById('theme-icon').setAttribute('src', 'icons/theme-light.svg');
+		document.getElementById('theme-icon').setAttribute('src', 'icons/theme/light.svg');
 		document.getElementById('theme-icon').setAttribute('alt', 'switch theme from light to dark');
 		return;
 	}
 	if (value === 'dark') {
 		document.body.setAttribute('theme', 'dark');
-		document.getElementById('theme-icon').setAttribute('src', 'icons/theme-dark.svg');
+		document.getElementById('theme-icon').setAttribute('src', 'icons/theme/dark.svg');
 		document.getElementById('theme-icon').setAttribute('alt', 'switch theme from dark to light');
 		return;
 	}
