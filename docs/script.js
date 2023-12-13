@@ -7,7 +7,6 @@ if (referrerParams.has('lang'))
 	lang(referrerParams.get('lang'));
 if (referrerParams.has('theme'))
 	theme(referrerParams.get('theme'));
-const text = JSON.parse(document.getElementById('text').textContent);
 
 var Text;
 fetch("./text/en.json")
