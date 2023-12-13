@@ -10,7 +10,7 @@ if (referrerParams.has('theme'))
 
 var Text;
 fetch("./text/en.json")
-	.then(response=>response.json())
+	.then(response => response.json())
 	.then(data => Text = data);
 console.log(Text);
 function text(data) {
