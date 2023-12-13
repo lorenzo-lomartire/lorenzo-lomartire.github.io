@@ -2,15 +2,12 @@ const urlParams = new URLSearchParams(location.search);
 if (urlParams.size > 0) {
 	location.replace(location.origin + location.pathname);
 }
-/*if (urlParams.has('lang'))
-	location.replace(location.origin + location.pathname);
-if (urlParams.has('theme'))
-	location.replace(location.origin + location.pathname);*/
 const referrerParams = new URLSearchParams(document.referrer.substring(document.referrer.indexOf('?')));
 if (referrerParams.has('lang'))
 	lang(referrerParams.get('lang'));
 if (referrerParams.has('theme'))
 	theme(referrerParams.get('theme'));
+const text = JSON.parse(document.getElementById('text').textContent);
 
 function navigate(url) {
 	url += '?theme=' + (document.body.getAttribute('theme') || 'light');
