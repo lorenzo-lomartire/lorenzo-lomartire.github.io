@@ -50,13 +50,18 @@ function theme(value) {
 	}
 }
 function lang(value) {
-	if (value === 'en' || value === 'it') {
-		document.documentElement.setAttribute('lang', value);
-		document.getElementById('lang-icon').setAttribute('src', 'icons/lang/' + value + '.svg');
-		text(value);
+	if (value === 'en') {
+		document.documentElement.setAttribute('lang', 'en');
+		document.getElementById('lang-icon').setAttribute('src', 'icons/lang/en.svg');
+		text('en');
 		return;
 	}
-	lang(en);
+	if (value === 'it') {
+		document.documentElement.setAttribute('lang', 'it');
+		document.getElementById('lang-icon').setAttribute('src', 'icons/lang/it.svg');
+		text('it');
+		return;
+	}
 }
 function text(lang) {
 	fetch('./text/' + lang + '.json')
