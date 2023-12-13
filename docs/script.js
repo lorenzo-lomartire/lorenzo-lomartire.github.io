@@ -12,7 +12,7 @@ var Text;
 fetch("./text/en.json")
 	.then(response => response.json())
 	.then(data => Text = data);
-console.log(Text);
+console.log(Text.music);
 function text(data) {
 	
 }
