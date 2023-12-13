@@ -1,5 +1,5 @@
 const urlParams = new URLSearchParams(location.search);
-console.log(urlParams);
+console.log(urlParams || 'none');
 /*if (urlParams.has('lang'))
 	location.replace(location.origin + location.pathname);*/
 if (urlParams.has('theme'))
