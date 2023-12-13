@@ -48,6 +48,7 @@ button.url {
 	height: 2.5rem;
 	background: none;
 	border: none;
+	font-variant: small-caps;
 }
 footer {
 	position: fixed;
