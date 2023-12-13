@@ -38,6 +38,7 @@ nav {
 	display: flex;
 	align-items: center;
 	& div.empty {
+		min-width: 10px;
 		flex-grow: 10;
 		flex-shrink: 10;
 	}
