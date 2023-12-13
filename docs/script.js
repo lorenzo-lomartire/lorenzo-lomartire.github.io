@@ -8,14 +8,6 @@ if (referrerParams.has('lang'))
 if (referrerParams.has('theme'))
 	theme(referrerParams.get('theme'));
 
-fetch("./text/en.json")
-	.then(response => response.json())
-	.then(data => {
-		for (let id in data) {
-			document.getElementById(id).textContent = data[id];
-		}
-	});
-
 function navigate(url) {
 	url += '?theme=' + (document.body.getAttribute('theme') || 'light');
 	url += '&lang=' + (document.documentElement.getAttribute('lang') || 'en');
@@ -58,16 +50,20 @@ function theme(value) {
 	}
 }
 function lang(value) {
-	if (value === 'en') {
-		document.documentElement.setAttribute('lang', 'en');
-		document.getElementById('lang-icon').setAttribute('src', 'icons/lang/en.svg');
-		document.getElementById('lang-icon').setAttribute('alt', 'switch language from english to italian');
+	if (value === 'en' || value === 'it') {
+		document.documentElement.setAttribute('lang', value);
+		document.getElementById('lang-icon').setAttribute('src', 'icons/lang/' + value + '.svg');
+		text(value);
 		return;
 	}
-	if (value === 'it') {
-		document.documentElement.setAttribute('lang', 'it');
-		document.getElementById('lang-icon').setAttribute('src', 'icons/lang/it.svg');
-		document.getElementById('lang-icon').setAttribute('alt', 'switch language from italian to english');
-		return;
+	lang(en);
+}
+function text(lang) {
+	fetch('./text/' + lang + '.json')
+	.then(response => response.json())
+	.then(data => {
+	for (let id in data) {
+		document.getElementById(id).textContent = data[id];
 	}
+});
 }
