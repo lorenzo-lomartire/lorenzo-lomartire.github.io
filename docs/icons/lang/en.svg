@@ -10,4 +10,6 @@
 	<use href="#stripe" transform="rotate(270 50 50)"/>
 	<rect width="20" height="100" x="40" fill="white"/>
 	<rect width="100" height="20" y="40" fill="white"/>
+	<rect width="12" height="100" x="44" fill="red"/>
+	<rect width="100" height="12" y="44" fill="red"/>
 </svg>
