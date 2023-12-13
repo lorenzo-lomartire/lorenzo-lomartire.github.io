@@ -5,5 +5,5 @@
 	<path d="M 0 0 V 10 L 90 100 H 100 V 90 L 10 0 Z" fill="white"/>
 	<path d="M 100 0 V 10 L 10 100 H 0 V 90 L 90 0 Z" fill="white"/>
 	<path id="stripe" d="M 0 0 L 50 50 H 45 L 0 5 Z" fill="red"/>
-	<use href="stripe" />
+	<use href="#stripe" transform="rotate(90, 50, 50)"/>
 </svg>
