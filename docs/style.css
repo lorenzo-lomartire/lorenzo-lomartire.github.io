@@ -1,6 +1,10 @@
 :root {
 	font-size: 16px;
 }
+body {
+	display: flex;
+	flex-direction: column;
+}
 body[theme = "light"] {
 	background: white;
 	color: black;
@@ -40,18 +44,21 @@ nav {
 	& div.empty {
 		flex: 1;
 	}
+	& button.icon {
+		width: 2.5rem;
+		height: 2.5rem;
+		background: none;
+		border: none;
+	}
+	& button.url {
+		height: 2.5rem;
+		background: none;
+		border: none;
+		font-variant: small-caps;
+	}
 }
-button.icon {
-	width: 2.5rem;
-	height: 2.5rem;
-	background: none;
-	border: none;
-}
-button.url {
-	height: 2.5rem;
-	background: none;
-	border: none;
-	font-variant: small-caps;
+main {
+	flex: 1;
 }
 footer {
 	position: fixed;
