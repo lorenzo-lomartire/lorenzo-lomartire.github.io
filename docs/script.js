@@ -9,6 +9,15 @@ if (referrerParams.has('theme'))
 	theme(referrerParams.get('theme'));
 const text = JSON.parse(document.getElementById('text').textContent);
 
+var Text;
+fetch("./text/en.json")
+	.then(response=>resp.json())
+	.then(data => Text = data);
+console.log(Text);
+function text(data) {
+	
+}
+
 function navigate(url) {
 	url += '?theme=' + (document.body.getAttribute('theme') || 'light');
 	url += '&lang=' + (document.documentElement.getAttribute('lang') || 'en');
