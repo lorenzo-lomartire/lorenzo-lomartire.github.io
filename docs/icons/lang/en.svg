@@ -8,4 +8,6 @@
 	<use href="#stripe" transform="rotate(90 50 50)"/>
 	<use href="#stripe" transform="rotate(180 50 50)"/>
 	<use href="#stripe" transform="rotate(270 50 50)"/>
+	<rect width="20" height="100" x="40" fill="white"/>
+	<rect width="100" height="20" y="40" fill="white"/>
 </svg>
