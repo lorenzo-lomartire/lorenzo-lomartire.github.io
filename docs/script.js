@@ -12,7 +12,7 @@ var text = {};
 fetch("./text/en.json")
 	.then(response => response.json())
 	.then(data => text = data);
-console.log(text);
+alert(text.music);
 
 function navigate(url) {
 	url += '?theme=' + (document.body.getAttribute('theme') || 'light');
