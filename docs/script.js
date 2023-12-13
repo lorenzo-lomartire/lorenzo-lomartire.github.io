@@ -1,9 +1,11 @@
 const urlParams = new URLSearchParams(location.search);
-console.log(urlParams || 'none');
-/*if (urlParams.has('lang'))
-	location.replace(location.origin + location.pathname);*/
-if (urlParams.has('theme'))
+if (urlParams.size > 0) {
 	location.replace(location.origin + location.pathname);
+}
+/*if (urlParams.has('lang'))
+	location.replace(location.origin + location.pathname);
+if (urlParams.has('theme'))
+	location.replace(location.origin + location.pathname);*/
 const referrerParams = new URLSearchParams(document.referrer.substring(document.referrer.indexOf('?')));
 if (referrerParams.has('lang'))
 	lang(referrerParams.get('lang'));
@@ -11,7 +13,9 @@ if (referrerParams.has('theme'))
 	theme(referrerParams.get('theme'));
 
 function navigate(url) {
-	location = url + '?theme=' + (document.body.getAttribute('theme') || 'light');;
+	url += '?theme=' + (document.body.getAttribute('theme') || 'light');
+	url += '&lang=' + (document.documentElement.getAttribute('lang') || 'en');
+	location = url;
 }
 function switchTheme() {
 	if (document.body.getAttribute('theme') === 'light') {
