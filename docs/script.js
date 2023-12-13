@@ -11,8 +11,8 @@ if (referrerParams.has('theme'))
 var text = {};
 fetch("./text/en.json")
 	.then(response => response.json())
-	.then(data => text = data);
-alert(text.music);
+	.then(data => console.log(data));
+//alert(text.music);
 
 function navigate(url) {
 	url += '?theme=' + (document.body.getAttribute('theme') || 'light');
