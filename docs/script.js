@@ -8,11 +8,13 @@ if (referrerParams.has('lang'))
 if (referrerParams.has('theme'))
 	theme(referrerParams.get('theme'));
 
-var text = {};
 fetch("./text/en.json")
 	.then(response => response.json())
-	.then(data => console.log(data));
-//alert(text.music);
+	.then(data => {
+		for (let id in data) {
+			document.getElementById(id).textContent = data[id];
+		}
+	});
 
 function navigate(url) {
 	url += '?theme=' + (document.body.getAttribute('theme') || 'light');
