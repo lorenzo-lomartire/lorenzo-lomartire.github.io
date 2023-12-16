@@ -50,8 +50,6 @@ preload {
 	display: none;
 }
 nav {
-	position: sticky;
-	top: 0;
 	height: 2.5rem;
 	width: 100%;
 	display: flex;
