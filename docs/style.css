@@ -4,6 +4,7 @@
 body {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 }
 body[theme = "light"] {
 	background: white;
@@ -67,8 +68,6 @@ main {
 	flex: 1;
 }
 footer {
-	position: fixed;
-	bottom: 0;
 	width: 100%;
 	display: flex;
 	justify-content: center;
