@@ -4,6 +4,9 @@
 	height: 100vh;
 	display: flex;
 }
+head, title, link, meta, style, script {
+	display: none;
+}
 body {
 	flex: 1;
 	display: flex;
