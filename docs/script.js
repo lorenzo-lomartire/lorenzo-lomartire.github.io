@@ -3,7 +3,7 @@ console.log(urlParams);
 if (urlParams.size) {
 	location.replace(location.origin + location.pathname);
 }
-const referrerParams = new URLSearchParams(document.referrer.substring(document.referrer.indexOf('?')));
+const referrerParams = new URLSearchParams(new URL(document.referrer).search);
 if (referrerParams.has('lang'))
 	lang(referrerParams.get('lang'));
 if (referrerParams.has('theme'))
