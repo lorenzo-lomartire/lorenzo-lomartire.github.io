@@ -69,5 +69,8 @@ main {
 footer {
 	position: fixed;
 	bottom: 0;
-	text-align:center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
