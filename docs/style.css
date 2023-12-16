@@ -17,6 +17,9 @@ body[theme = "light"] {
 	& nav {
 		border-bottom: 1px solid black;
 	}
+	& footer {
+		border-top: 1px solid black;
+	}
 }
 body[theme="dark"] {
 	background: black;
@@ -29,6 +32,9 @@ body[theme="dark"] {
 	}
 	& nav {
 		border-bottom: 1px solid white;
+	}
+	& footer {
+		border-top: 1px solid white;
 	}
 }
 preload {
@@ -63,4 +69,5 @@ main {
 footer {
 	position: fixed;
 	bottom: 0;
+	text-align:center;
 }
