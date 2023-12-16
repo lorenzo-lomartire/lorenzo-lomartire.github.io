@@ -1,5 +1,5 @@
 const urlParams = new URLSearchParams(location.search);
-if (urlParams.size > 0) {
+if (urlParams.size) {
 	location.replace(location.origin + location.pathname);
 }
 const referrerParams = new URLSearchParams(document.referrer.substring(document.referrer.indexOf('?')));
