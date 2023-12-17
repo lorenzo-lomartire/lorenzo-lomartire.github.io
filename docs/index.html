@@ -5,9 +5,8 @@
 		<link rel='stylesheet' href='style.css'>
 		<meta charset='UTF-8'>
 		<meta name='description' content='Lorenzo Lomartire'>
-		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, interactive-widget=resizes-visual">
-		<script src="accounts.google.com/gsi/client" async defer></script>
-		<meta name="google-signin-client_id" content="927304878915-eqvgn0rk10ha8emeickss9q7l314c93t.apps.googleusercontent.com">
+		<meta name='viewport' content='width=device-width, height=device-height, initial-scale=1, interactive-widget=resizes-visual'>
+		<script src='https://accounts.google.com/gsi/client' async defer></script>
 	</head>
 	<body theme='light'>
 		<preload>
@@ -26,7 +25,8 @@
 				Music
 			</button>
 			<div class='empty'></div>
-			<div class="g-signin2" data-onsuccess="onSignIn"></div>
+			<div id='g_id_onload' data-client_id='927304878915-eqvgn0rk10ha8emeickss9q7l314c93t.apps.googleusercontent.com' data-callback='handleCredentialResponse'></div>
+			<div class='g_id_signin' data-type='standard'></div>
 			<button class='icon' onclick='switchLang()'>
 				<img id='lang-icon' src='icons/lang/en.svg' alt='switch language from english to italian'>
 			</button>
