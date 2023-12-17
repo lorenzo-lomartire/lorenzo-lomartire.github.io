@@ -7,6 +7,7 @@
 		<meta name='description' content='Lorenzo Lomartire'>
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, interactive-widget=resizes-visual">
 		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<meta name="google-signin-client_id" content="927304878915-eqvgn0rk10ha8emeickss9q7l314c93t.apps.googleusercontent.com">
 	</head>
 	<body theme='light'>
 		<preload>
@@ -25,6 +26,7 @@
 				Music
 			</button>
 			<div class='empty'></div>
+			<div class="g-signin2" data-onsuccess="onSignIn"></div>
 			<button class='icon' onclick='switchLang()'>
 				<img id='lang-icon' src='icons/lang/en.svg' alt='switch language from english to italian'>
 			</button>
