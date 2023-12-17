@@ -77,3 +77,6 @@ function text(lang) {
 		}
 	});
 }
+function handleCredentialResponse() {
+	console.log('ok')
+}
