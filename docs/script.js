@@ -1,5 +1,5 @@
 const urlParams = new URLSearchParams(location.search);
-console.log(urlParams);
+alert(urlParams.size);
 if (urlParams.size) {
 	location.replace(location.origin + location.pathname);
 }
