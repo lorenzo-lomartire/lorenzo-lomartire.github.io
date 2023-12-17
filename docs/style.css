@@ -87,7 +87,7 @@ footer {
 }
 @media print {
 	body {
-		background: whi;
+		background: white;
 		color: black;
 	}
 	nav {
