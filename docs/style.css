@@ -39,10 +39,12 @@ nav {
 	}
 }
 main {
+	display: flex;
 	flex: 1;
 	padding: 1em;
 	overflow: hidden;
 	& .scroll {
+		flex: 1;
 		overflow-y: auto;
 	}
 }
