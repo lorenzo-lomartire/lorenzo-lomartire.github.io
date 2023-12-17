@@ -78,5 +78,5 @@ function text(lang) {
 	});
 }
 function handleCredentialResponse() {
-	console.log('ok')
+	console.log('ok');
 }
