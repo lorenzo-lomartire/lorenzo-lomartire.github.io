@@ -1,6 +1,6 @@
 const urlParams = new URLSearchParams(location.search);
-alert(urlParams.entries.length);
-if (urlParams.entries.length) {
+alert(urlParams.has('lang') || urlParams.has('theme'));
+if (urlParams.has('lang') || urlParams.has('theme')) {
 	location.replace(location.origin + location.pathname);
 }
 const referrerParams = new URLSearchParams(new URL(document.referrer).search);
