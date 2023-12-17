@@ -41,6 +41,7 @@ nav {
 main {
 	flex: 1;
 	padding: 1em;
+	overflow: hidden;
 	& .scroll {
 		overflow-y: auto;
 	}
