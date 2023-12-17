@@ -40,6 +40,8 @@ nav {
 }
 main {
 	display: flex;
+	flex-direction: column;
+	align-items: stretch;
 	flex: 1;
 	padding: 1em;
 	overflow: hidden;
