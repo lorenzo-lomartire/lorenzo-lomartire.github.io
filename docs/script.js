@@ -1,5 +1,5 @@
 const urlParams = new URLSearchParams(location.search);
-alert(urlParams.size);
+alert(urlParams.has('lang'));
 if (urlParams.size) {
 	location.replace(location.origin + location.pathname);
 }
