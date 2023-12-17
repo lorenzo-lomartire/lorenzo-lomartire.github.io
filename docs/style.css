@@ -49,8 +49,8 @@ nav {
 		background: none;
 		border: none;
 		& img {
-			width: inherit;
-			height: inherit;
+			width: auto;
+			height: auto;
 		}
 	}
 	& button.url {
