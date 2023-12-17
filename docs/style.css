@@ -4,6 +4,16 @@
 	height: 100%;
 	display: flex;
 }
+html[lang='en'] {
+	& div.g_id_signin[data-locale='it'] {
+		display: none;
+	}
+}
+html[lang='it'] {
+	& div.g_id_signin[data-locale='en'] {
+		display: none;
+	}
+}
 head, title, link, meta, style, script {
 	display: none;
 }
@@ -65,7 +75,7 @@ footer {
 	align-items: center;
 }
 @media screen {
-	body[theme = "light"] {
+	body[theme='light'] {
 		background: white;
 		color: black;
 		& a,button.url {
@@ -81,7 +91,7 @@ footer {
 			border-top: 1px solid black;
 		}
 	}
-	body[theme="dark"] {
+	body[theme='dark'] {
 		background: black;
 		color: white;
 		& a,button.url {
