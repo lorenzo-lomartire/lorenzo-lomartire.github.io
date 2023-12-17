@@ -72,8 +72,10 @@ nav {
 }
 main {
 	flex: 1;
-	overflow-y: auto;
 	padding: 1em;
+	& .scroll {
+		overflow-y: auto;
+	}
 }
 footer {
 	width: 100%;
