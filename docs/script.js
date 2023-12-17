@@ -1,7 +1,7 @@
 if (location.search) {
 	location.replace(location.origin + location.pathname);
 }
-const urlParams = new URLSearchParams(new URL(document.referrer).search);
+const urlParams = new URLSearchParams(new URL(document.referrer || location).search);
 if (urlParams.has('lang'))
 	lang(urlParams.get('lang'));
 if (urlParams.has('theme'))
