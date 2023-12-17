@@ -84,8 +84,11 @@ footer {
 	align-items: center;
 }
 @media print {
+	head, title, link, meta, style, script {
+		display: none;
+	}
 	body {
-		background: white;
+		background: transparent;
 		color: black;
 	}
 	nav {
