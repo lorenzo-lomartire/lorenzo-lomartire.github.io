@@ -83,3 +83,12 @@ footer {
 	justify-content: center;
 	align-items: center;
 }
+@media print {
+	body {
+		background: white;
+		color: black;
+	}
+	nav {
+		display: none;
+	}
+}
