@@ -1,12 +1,11 @@
-//const urlParams = new URLSearchParams(location.search);
-if (location.search/*urlParams.has('lang') || urlParams.has('theme')*/) {
+if (location.search) {
 	location.replace(location.origin + location.pathname);
 }
-const referrerParams = new URLSearchParams(new URL(document.referrer).search);
-if (referrerParams.has('lang'))
-	lang(referrerParams.get('lang'));
-if (referrerParams.has('theme'))
-	theme(referrerParams.get('theme'));
+const urlParams = new URLSearchParams(new URL(document.referrer).search);
+if (urlParams.has('lang'))
+	lang(urlParams.get('lang'));
+if (urlParams.has('theme'))
+	theme(urlParams.get('theme'));
 
 function navigate(url) {
 	url += '?theme=' + (document.body.getAttribute('theme') || 'light');
