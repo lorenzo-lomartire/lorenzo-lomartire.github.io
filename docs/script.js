@@ -52,12 +52,18 @@ function lang(value) {
 	if (value === 'en') {
 		document.documentElement.setAttribute('lang', 'en');
 		document.getElementById('lang-icon').setAttribute('src', 'icons/lang/en.svg');
+		Array.from(document.getElementsByClassname('g_id_signin')).forEach(signinButton => {
+			signinButton.setAttribute('data-locale', 'en');
+		});
 		text('en');
 		return;
 	}
 	if (value === 'it') {
 		document.documentElement.setAttribute('lang', 'it');
 		document.getElementById('lang-icon').setAttribute('src', 'icons/lang/it.svg');
+		Array.from(document.getElementsByClassname('g_id_signin')).forEach(signinButton => {
+			signinButton.setAttribute('data-locale', 'it');
+		});
 		text('it');
 		return;
 	}
