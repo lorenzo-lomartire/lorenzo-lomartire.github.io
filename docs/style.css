@@ -48,6 +48,10 @@ nav {
 		height: 2.5rem;
 		background: none;
 		border: none;
+		& img {
+			width: inherit;
+			height: inherit;
+		}
 	}
 	& button.url {
 		height: 2.5rem;
