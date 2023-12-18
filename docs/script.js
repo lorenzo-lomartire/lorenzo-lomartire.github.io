@@ -7,6 +7,9 @@ if (urlParams.has('lang'))
 if (urlParams.has('theme'))
 	theme(urlParams.get('theme'));
 
+document.getElementById('lang-button').onclick = switchLang;
+document.getElementById('theme-button').onclick = switchTheme;
+
 function navigate(url) {
 	url += '?theme=' + (document.body.getAttribute('theme') || 'light');
 	url += '&lang=' + (document.documentElement.getAttribute('lang') || 'en');
