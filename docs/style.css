@@ -38,9 +38,6 @@ nav {
 		height: 2.5rem;
 		background: none;
 		border: none;
-		& img {
-			aspect-ratio: 1 / 1;
-		}
 	}
 	& button.url {
 		height: 2.5rem;
