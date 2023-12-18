@@ -15,6 +15,12 @@
 	"id": "/",
 	"start_url": "/",
 	"background_color": "white",
+	"display_override": [
+		"fullscreen",
+		"standalone",
+		"minimal-ui",
+		"browser"
+	],
 	"display": "fullscreen",
 	"theme_color": "black",
 	"description": "Lorenzo Lomartire"
