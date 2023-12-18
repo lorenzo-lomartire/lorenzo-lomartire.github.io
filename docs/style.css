@@ -39,8 +39,7 @@ nav {
 		background: none;
 		border: none;
 		& img {
-			width: auto;
-			height: auto;
+			aspect-ratio: 1 / 1;
 		}
 	}
 	& button.url {
