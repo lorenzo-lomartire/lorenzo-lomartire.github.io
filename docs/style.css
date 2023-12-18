@@ -4,16 +4,6 @@
 	height: 100%;
 	display: flex;
 }
-html[lang='en'] {
-	& div.g_id_signin[data-locale='it'] {
-		display: none;
-	}
-}
-html[lang='it'] {
-	& div.g_id_signin[data-locale='en'] {
-		display: none;
-	}
-}
 head, title, link, meta, style, script {
 	display: none;
 }
