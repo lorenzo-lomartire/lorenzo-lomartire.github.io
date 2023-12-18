@@ -12,7 +12,9 @@ document.getElementById('theme-button').onclick = switchTheme;
 document.getElementById('homepage-button').onclick = () => {
 	navigate(location.origin);
 }
-document.getElementById('music-button')
+document.getElementById('music-button').onclick = () => {
+	navigate(location.origin + '/music');
+};
 
 function navigate(url) {
 	url += '?theme=' + (document.body.getAttribute('theme') || 'light');
