@@ -1,5 +1,11 @@
 {
 	"name": "Lorenzo Lomartire",
 	"start_url": "/",
-	"display": "fullscreen"
+	"icons": [
+		{
+			"src": "/favicon.png",
+			"type": "image/png",
+		}
+	]
+	"display": "fullscreen",
 }
