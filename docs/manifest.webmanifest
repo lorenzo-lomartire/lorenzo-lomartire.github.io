@@ -2,10 +2,21 @@
 	"name": "Lorenzo Lomartire",
 	"icons": [
 		{
-			"src": "/favicon.png",
+			"src": "/icons/main/1024.png",
+			"type": "image/png",
+			"sizes": "1024x1024",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/icons/main/512.png",
 			"type": "image/png",
 			"sizes": "512x512",
 			"purpose": "any maskable"
+		},
+		{
+			"src": "/icons/main/412.png",
+			"type": "image/png",
+			"sizes": "512x512",
 		}
 	],
 	"start_url": "/",
