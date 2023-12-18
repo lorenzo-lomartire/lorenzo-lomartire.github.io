@@ -9,6 +9,10 @@ if (urlParams.has('theme'))
 
 document.getElementById('lang-button').onclick = switchLang;
 document.getElementById('theme-button').onclick = switchTheme;
+document.getElementById('homepage-button').onclick = () => {
+	navigate(location.origin);
+}
+document.getElementById('music-button')
 
 function navigate(url) {
 	url += '?theme=' + (document.body.getAttribute('theme') || 'light');
