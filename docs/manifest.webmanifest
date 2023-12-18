@@ -1,6 +1,5 @@
 {
 	"name": "Lorenzo Lomartire",
-	"start_url": "/",
 	"icons": [
 		{
 			"src": "/favicon.png",
@@ -9,5 +8,8 @@
 			"purpose": "any maskable"
 		}
 	],
-	"display": "fullscreen"
+	"start_url": "/",
+	"background_color": "white",
+	"display": "fullscreen",
+	"theme_color": "black",
 }
