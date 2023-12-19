@@ -23,6 +23,9 @@
 		}
 		& button {
 			color: inherit;
+			& figure {
+				margin: none;
+			}
 		}
 		& header {}
 		& nav {
