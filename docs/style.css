@@ -45,7 +45,7 @@
 				align-items: center;
 				& figure {
 					width: inherit;
-					height: inherit;
+					height: fit-content;
 					display: flex;
 					flex-direction: column;
 					align-items: center;
