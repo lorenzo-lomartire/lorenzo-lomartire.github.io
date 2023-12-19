@@ -24,7 +24,7 @@
 		& button {
 			color: inherit;
 			& figure {
-				margin: none;
+				margin: 0;
 			}
 		}
 		& header {}
