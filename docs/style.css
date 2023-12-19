@@ -44,11 +44,11 @@
 				height: 2.5rem;
 				display: flex;
 				flex-direction: column;
-				justify-content: center;
 				align-items: center;
 				& figure {
 					display: flex;
 					flex-direction: column;
+					justify-content: center;
 					align-items: center;
 					& figcaption {
 						font-variant: small-caps;
