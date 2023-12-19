@@ -24,8 +24,34 @@ body {
 	& button {
 		color: inherit;
 	}
+	&[theme='light'] {
+		background: white;
+		color: black;
+		& a {
+			color: blue;
+		}
+		& nav {
+			border-bottom: 1px solid black;
+		}
+		& footer {
+			border-top: 1px solid black;
+		}
+	}
 	&[theme='dark'] {
 		background: black;
+		color: white;
+		& a {
+			color: yellow;
+		}
+		& button img.mono {
+			filter: invert(1);
+		}
+		& nav {
+			border-bottom: 1px solid white;
+		}
+		& footer {
+			border-top: 1px solid white;
+		}
 	}
 }
 preload {
@@ -72,40 +98,6 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-@media screen {
-	body[theme='light'] {
-		background: white;
-		color: black;
-		& a,button.url {
-			color: blue;
-		}
-		& button.icon img.mono {
-			filter: invert(0);
-		}
-		& nav {
-			border-bottom: 1px solid black;
-		}
-		& footer {
-			border-top: 1px solid black;
-		}
-	}
-	body[theme='dark'] {
-		/*background: black;*/
-		color: white;
-		& a,button.url {
-			color: yellow;
-		}
-		& button.icon img.mono {
-			filter: invert(1);
-		}
-		& nav {
-			border-bottom: 1px solid white;
-		}
-		& footer {
-			border-top: 1px solid white;
-		}
-	}
 }
 @media print {
 	body {
