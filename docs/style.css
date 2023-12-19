@@ -43,12 +43,12 @@
 				width: 8em;
 				height: 2.5rem;
 				display: flex;
+				justify-content: center;
 				flex-direction: column;
 				align-items: center;
 				& figure {
 					display: flex;
 					flex-direction: column;
-					justify-content: center;
 					align-items: center;
 					& figcaption {
 						font-variant: small-caps;
