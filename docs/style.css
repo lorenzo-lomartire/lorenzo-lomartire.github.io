@@ -40,8 +40,12 @@
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-				& span {
-					font-variant: small-caps;
+				& figure {
+					width: inherit;
+					height: inherit;
+					& figcaption {
+						font-variant: small-caps;
+					}
 				}
 				&.icon {
 					width: 2.5rem;
