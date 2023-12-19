@@ -1,6 +1,6 @@
 {
-	"theme-label": "Tema",
-	"homepage-label": "Pagina Home",
-	"music-label": "Musica",
-	"lang-label": "Lingua"
+	"theme-figcaption": "Tema",
+	"homepage-figcaption": "Pagina Home",
+	"music-figcaption": "Musica",
+	"lang-figcaption": "Lingua"
 }
