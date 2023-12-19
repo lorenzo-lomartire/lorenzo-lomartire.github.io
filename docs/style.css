@@ -21,6 +21,12 @@ body {
 		-ms-user-select: none; /* Internet Explorer/Edge */
 		user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 	}
+	& button {
+		color: inherit;
+	}
+	&[theme='dark'] {
+		background: black;
+	}
 }
 preload {
 	display: none;
@@ -85,7 +91,7 @@ footer {
 		}
 	}
 	body[theme='dark'] {
-		background: black;
+		/*background: black;*/
 		color: white;
 		& a,button.url {
 			color: yellow;
