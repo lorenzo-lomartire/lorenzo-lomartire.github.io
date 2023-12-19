@@ -25,13 +25,11 @@
 			color: inherit;
 			& figure {
 				margin: 0;
-				width: fit-content;
-				height: fit-content;
+				padding: 0;
 			}
 		}
 		& header {}
 		& nav {
-			height: fit-content;
 			display: flex;
 			align-items: center;
 			& div.empty {
