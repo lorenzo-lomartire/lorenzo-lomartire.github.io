@@ -70,6 +70,8 @@ nav {
 		border: none;
 		width: 8em;
 		height: 2.5rem;
+		display: flex;
+		flex-direction: column;
 		& span {
 			font-variant: small-caps;
 		}
