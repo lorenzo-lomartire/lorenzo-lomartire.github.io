@@ -26,7 +26,7 @@
 		& button {
 			color: inherit;
 			margin: 0;
-			padding: 5;
+			padding: 5px;
 			& figure {
 				margin: 0;
 				padding: 0;
@@ -35,7 +35,7 @@
 		& header {}
 		& nav {
 			margin: 0;
-			padding: 5;
+			padding: 5px;
 			display: flex;
 			align-items: center;
 			& div.empty {
