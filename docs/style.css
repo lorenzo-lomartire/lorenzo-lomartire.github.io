@@ -33,18 +33,20 @@ nav {
 	& div.empty {
 		flex: 1;
 	}
-	& button.icon {
-		width: 2.5rem;
-		height: 2.5rem;
+	& button {
 		background: none;
 		border: none;
-	}
-	& button.url {
 		width: 8em;
 		height: 2.5rem;
-		background: none;
-		border: none;
-		font-variant: small-caps;
+		& span {
+			font-variant: small-caps;
+		}
+		&.icon {
+			width: 2.5rem;
+			& span {
+				display: none;
+			}
+		}
 	}
 }
 main {
