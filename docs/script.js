@@ -1,5 +1,5 @@
 alert(location)
-if (location.search || location.pathname === '/index' || location.pathname === '/index.html') {
+if (location.search) {
 	location.replace(location.origin + location.pathname);
 }
 const urlParams = new URLSearchParams(new URL(document.referrer || location).search);
