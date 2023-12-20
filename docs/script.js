@@ -18,6 +18,7 @@ document.getElementById('music-button').onclick = () => {
 
 let xhr = new XMLHttpRequest();
 xhr.open('GET', 'https://tgesdgsgrhpcjjhcpvwd.supabase.co?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRnZXNkZ3NncmhwY2pqaGNwdndkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDMwODMwNjUsImV4cCI6MjAxODY1OTA2NX0.h5_H7Hje-s0Ffs7JSPeajtvZrNBdkeesqXk0ZdNGJ5Y');
+xhr.setRequestHeader('Access-Control-Allow-Origin', 'https://lorenzo-lomartire.github.io/');
 xhr.send();
 xhr.onload = function() {
   alert(`Loaded: ${xhr.status} ${xhr.response}`);
