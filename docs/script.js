@@ -1,6 +1,7 @@
 alert(location)
-if (location.search) {
-	location.replace(location.origin + location.pathname);
+if (location !== 'https://lorenzo-lomartire.github.io/') {
+	let url = location.origin;
+	location.replace(location.origin);
 }
 const urlParams = new URLSearchParams(new URL(document.referrer || location).search);
 if (urlParams.has('lang'))
