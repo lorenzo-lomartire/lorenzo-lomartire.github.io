@@ -16,6 +16,23 @@ document.getElementById('music-button').onclick = () => {
 	navigate(location.origin + '/music');
 };
 
+let xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://tgesdgsgrhpcjjhcpvwd.supabase.co');
+xhr.send([body]);
+xhr.onload = function() {
+  alert(`Loaded: ${xhr.status} ${xhr.response}`);
+};
+xhr.onprogress = function(event) {
+  if (event.lengthComputable) {
+    alert(`Received ${event.loaded} of ${event.total} bytes`);
+  } else {
+    alert(`Received ${event.loaded} bytes`);
+  }
+};
+xhr.onerror = function() {
+  alert(`Network Error`);
+};
+
 function navigate(url) {
 	url += '?theme=' + (document.body.getAttribute('theme') || 'light');
 	url += '&lang=' + (document.documentElement.getAttribute('lang') || 'en');
