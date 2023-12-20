@@ -24,7 +24,7 @@
 			user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 		}
 		& img {
-			overflow: visible;
+			overflow-clip-margin: unset;
 		}
 		& button {
 			color: inherit;
