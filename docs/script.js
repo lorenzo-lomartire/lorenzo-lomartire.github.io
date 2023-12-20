@@ -1,5 +1,5 @@
-alert(location == 'https://lorenzo-lomartire.github.io/')
-if (location !== 'https://lorenzo-lomartire.github.io/') {
+alert(location === 'https://lorenzo-lomartire.github.io/')
+if (location != 'https://lorenzo-lomartire.github.io/') {
 	location.replace(location.origin);
 }
 const urlParams = new URLSearchParams(new URL(document.referrer || location).search);
