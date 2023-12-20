@@ -1,4 +1,4 @@
-alert(location === 'https://lorenzo-lomartire.github.io/')
+console.log(location)
 if (location != 'https://lorenzo-lomartire.github.io/') {
 	location.replace(location.origin);
 }
