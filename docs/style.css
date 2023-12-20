@@ -34,6 +34,11 @@
 				margin: 0;
 				padding: 0;
 			}
+			& a {
+				color: inherit;
+				cursor: inherit;
+				text-decoration: inherit;
+			}
 		}
 		& header {}
 		& nav {
