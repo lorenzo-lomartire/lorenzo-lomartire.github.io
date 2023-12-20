@@ -35,7 +35,8 @@
 				padding: 0;
 			}
 			& a {
-				cursor: inherit !important;
+				color: inherit !important;
+				cursor: inherit;
 				text-decoration: inherit;
 			}
 		}
