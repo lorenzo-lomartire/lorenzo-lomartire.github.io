@@ -17,22 +17,6 @@ document.getElementById('music-button').onclick = () => {
 };
 
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
-let xhr = new XMLHttpRequest();
-xhr.open('GET', 'https://tgesdgsgrhpcjjhcpvwd.supabase.co?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRnZXNkZ3NncmhwY2pqaGNwdndkIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTcwMzA4MzA2NSwiZXhwIjoyMDE4NjU5MDY1fQ.z0z_kpICIwIid9jr8pdqejH_wILx1FEmjk2k_cy1Vag');
-xhr.send();
-xhr.onload = function() {
-  alert(`Loaded: ${xhr.status} ${xhr.response}`);
-};
-xhr.onprogress = function(event) {
-  if (event.lengthComputable) {
-    alert(`Received ${event.loaded} of ${event.total} bytes`);
-  } else {
-    alert(`Received ${event.loaded} bytes`);
-  }
-};
-xhr.onerror = function() {
-  alert(`Network Error`);
-};
 
 function navigate(url) {
 	url += '?theme=' + (document.body.getAttribute('theme') || 'light');
