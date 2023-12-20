@@ -16,8 +16,6 @@ document.getElementById('music-button').onclick = () => {
 	navigate(location.origin + '/music');
 };
 
-import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
-
 function navigate(url) {
 	url += '?theme=' + (document.body.getAttribute('theme') || 'light');
 	url += '&lang=' + (document.documentElement.getAttribute('lang') || 'en');
