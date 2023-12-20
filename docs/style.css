@@ -23,9 +23,6 @@
 			-ms-user-select: none; /* Internet Explorer/Edge */
 			user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 		}
-		& img {
-			overflow-clip-margin: 100px;
-		}
 		& button {
 			color: inherit;
 			margin: 0;
