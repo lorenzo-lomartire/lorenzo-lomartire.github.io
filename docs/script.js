@@ -1,3 +1,4 @@
+alert(location.pathname)
 if (location.search) {
 	location.replace(location.origin + location.pathname);
 }
