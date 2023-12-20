@@ -18,7 +18,7 @@ document.getElementById('music-button').onclick = () => {
 
 let xhr = new XMLHttpRequest();
 xhr.open('GET', 'https://tgesdgsgrhpcjjhcpvwd.supabase.co');
-xhr.send([body]);
+xhr.send();
 xhr.onload = function() {
   alert(`Loaded: ${xhr.status} ${xhr.response}`);
 };
