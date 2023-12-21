@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-if (location.toString() !== 'https://lorenzo-lomartire.github.io/') {
-=======
 if (location.toString() !== location.origin + '/') {
->>>>>>> f19c147 (	modificato:             docs/script.js)
 	location.replace(location.origin + '/');
 }
 const urlParams = new URLSearchParams(new URL(document.referrer || location).search);
