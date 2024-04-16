@@ -6,6 +6,7 @@ self.addEventListener('install', function(event) {
 				'/',
 				'/script.js',
 				'/style.css',
+				'/icons/*',
 			]);
 		})
 	);
