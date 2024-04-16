@@ -32,5 +32,6 @@ self.addEventListener('fetch', function(event) {
 		);
 	} catch (error) {
 		console.log(error);
+		return;
 	}
 });
