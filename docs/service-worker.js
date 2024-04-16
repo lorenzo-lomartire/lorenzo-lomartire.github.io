@@ -24,16 +24,13 @@ self.addEventListener('fetch', function(event) {
 	if (event.request.url.indexOf('lorenzo-lomartire.github.io') == -1) {
 		return;
 	}
-	event.respondWith(
-		caches.match(event.request).then(function(response) {
-			if (response) {
-				return response
-			}
-			try {
-				return fetch(event.request);
-			} catch(error) {
-				 console.log(error);
-			}
-		})
-	);
+	try {
+		event.respondWith(
+			caches.match(event.request).then(function(response) {
+				return response ? response : fetch(event.request);
+			})
+		);
+	} catch (error) {
+		console.log(error);
+	}
 });
