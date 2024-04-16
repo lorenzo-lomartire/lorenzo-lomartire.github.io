@@ -1,6 +1,15 @@
 if (location.toString() !== location.origin + '/') {
 	location.replace(location.origin + '/');
 }
+
+if ('serviceWorker' in navigator) {
+	navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+		console.log('Service Worker registered with scope:', registration.scope);
+	}).catch(function(error) {
+		console.error('Service Worker registration failed:', error);
+	});
+}
+
 const urlParams = new URLSearchParams(new URL(document.referrer || location).search);
 if (urlParams.has('lang'))
 	lang(urlParams.get('lang'));
