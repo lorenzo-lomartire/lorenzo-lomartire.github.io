@@ -6,7 +6,14 @@ self.addEventListener('install', function(event) {
 				'/',
 				'/script.js',
 				'/style.css',
-				'/icons/*',
+				'/icons/home.svg',
+				'/icons/music.svg',
+				'/icons/lang/en.svg',
+				'/icons/lang/it.svg',
+				'/icons/theme/dark.svg',
+				'/icons/theme/light.svg',
+				'/text/en.json',
+				'/text/it.json',
 			]);
 		})
 	);
