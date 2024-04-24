@@ -30,8 +30,10 @@ document.getElementById('music-button').onclick = () => {
 };
 
 function navigate(url) {
-	url += '?theme=' + (document.body.getAttribute('theme') || 'light');
-	url += '&lang=' + (document.documentElement.getAttribute('lang') || 'en');
+	if (navigator.onLine) {
+		url += '?theme=' + (document.body.getAttribute('theme') || 'light');
+		url += '&lang=' + (document.documentElement.getAttribute('lang') || 'en');
+	}
 	location = url;
 }
 function switchTheme() {
