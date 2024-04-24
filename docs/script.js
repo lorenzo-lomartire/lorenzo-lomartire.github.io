@@ -10,6 +10,10 @@ if ('serviceWorker' in navigator) {
 	});
 }
 
+if (!navigator.onLine) {
+	document.getElementsByTagName('main')[0].innerHTML = 'you are currently offline';
+}
+
 const urlParams = new URLSearchParams(new URL(document.referrer || location).search);
 if (urlParams.has('lang'))
 	lang(urlParams.get('lang'));
