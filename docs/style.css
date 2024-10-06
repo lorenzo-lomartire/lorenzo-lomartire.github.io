@@ -1,11 +1,11 @@
 :root {
-	font-size: 16px;
-	width: 100%;
+	width: 100dvw;
 	height: 100dvh;
+	font-size: 16px;
 	display: flex;
 }
 
-head, title, link, meta, style, script, preload {
+preload {
 	display: none;
 }
 
@@ -16,7 +16,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: stretch;
 	overflow: hidden;
 }
 
@@ -93,7 +92,7 @@ main {
 	flex-direction: column;
 	align-items: stretch;
 	flex: 1;
-	padding: 1em;
+	padding: 0.6em 1em;
 	overflow: hidden;
 }
 
@@ -148,6 +147,9 @@ body[theme='dark'] footer {
 }
 
 @media print {
+	:root {
+		font-family: Century, serif;
+	}
 	body {
 		background: white;
 		color: black;
