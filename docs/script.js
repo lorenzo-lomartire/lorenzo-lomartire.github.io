@@ -1,15 +1,15 @@
 if (location.toString() !== location.origin + '/') {
 	location.replace(location.origin + '/');
 }
-
-/*if ('serviceWorker' in navigator) {
+/*
+if ('serviceWorker' in navigator) {
 	navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
 		console.log('Service Worker registered with scope:', registration.scope);
 	}).catch(function(error) {
 		console.error('Service Worker registration failed:', error);
 	});
-}*/
-
+}
+*/
 if (!navigator.onLine) {
 	document.getElementsByTagName('main')[0].innerHTML = 'you are currently offline';
 }
@@ -63,13 +63,10 @@ function theme(value) {
 		document.body.setAttribute('theme', 'light');
 		document.getElementById('theme-icon').setAttribute('src', location.origin + '/icons/theme/light.svg');
 		document.getElementById('theme-icon').setAttribute('alt', 'switch theme from light to dark');
-		return;
-	}
-	if (value === 'dark') {
+	} else if (value === 'dark') {
 		document.body.setAttribute('theme', 'dark');
 		document.getElementById('theme-icon').setAttribute('src', location.origin + '/icons/theme/dark.svg');
 		document.getElementById('theme-icon').setAttribute('alt', 'switch theme from dark to light');
-		return;
 	}
 }
 function lang(value) {
@@ -77,13 +74,10 @@ function lang(value) {
 		document.documentElement.setAttribute('lang', 'en');
 		document.getElementById('lang-icon').setAttribute('src', location.origin + '/icons/lang/en.svg');
 		text('en');
-		return;
-	}
-	if (value === 'it') {
+	} else if (value === 'it') {
 		document.documentElement.setAttribute('lang', 'it');
 		document.getElementById('lang-icon').setAttribute('src', location.origin + '/icons/lang/it.svg');
 		text('it');
-		return;
 	}
 }
 function text(lang) {

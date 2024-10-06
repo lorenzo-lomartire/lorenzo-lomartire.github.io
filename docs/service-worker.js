@@ -21,7 +21,7 @@ self.addEventListener('install', function(event) {
 });
 
 self.addEventListener('fetch', function(event) {
-	if (event.request.url.indexOf('lorenzo-lomartire.github.io') == -1) {
+	if (event.request.url.indexOf('lorenzo-lomartire.github.io') === -1) {
 		return;
 	}
 	event.respondWith(
