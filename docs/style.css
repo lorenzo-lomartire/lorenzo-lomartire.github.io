@@ -114,15 +114,15 @@ body[theme='light'] {
 	color: black;
 }
 
-body[theme='light']a {
+body[theme='light'] a {
 	color: blue;
 }
 
-body[theme='light']nav {
+body[theme='light'] nav {
 	border-bottom: 1px solid black;
 }
 
-body[theme='light']footer {
+body[theme='light'] footer {
 	border-top: 1px solid black;
 }
 
@@ -131,19 +131,19 @@ body[theme='dark'] {
 	color: white;
 }
 
-body[theme='dark']a {
+body[theme='dark'] a {
 	color: yellow;
 }
 
-body[theme='dark']button img.mono {
+body[theme='dark'] button img.mono {
 	filter: invert(1);
 }
 
-body[theme='dark']nav {
+body[theme='dark'] nav {
 	border-bottom: 1px solid white;
 }
 
-body[theme='dark']footer {
+body[theme='dark'] footer {
 	border-top: 1px solid white;
 }
 
