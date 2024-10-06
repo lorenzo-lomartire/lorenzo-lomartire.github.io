@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
 	width: 100dvw;
 	height: 100dvh;
 	display: flex;
 	font-size: calc(40vw / 9);
-	font-family: Helvetica, sans-serif;
+	font-family: Noto Sans;
 }
 
 @media screen and (max-width: 315px) {
