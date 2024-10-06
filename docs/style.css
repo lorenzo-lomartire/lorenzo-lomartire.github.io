@@ -3,123 +3,150 @@
 	width: 100%;
 	height: 100dvh;
 	display: flex;
-	& head, title, link, meta, style, script, preload {
-		display: none;
-	}
-	& body {
-		margin: 0;
-		padding: 5px;
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: stretch;
-		overflow: hidden;
-		& .noselect {
-			-webkit-touch-callout: none; /* iOS Safari */
-			-webkit-user-select: none; /* Safari */
-			-khtml-user-select: none; /* Konqueror HTML */
-			-moz-user-select: none; /* Old versions of Firefox */
-			-ms-user-select: none; /* Internet Explorer/Edge */
-			user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
-		}
-		& button {
-			color: inherit;
-			margin: 0;
-			padding: 5px;
-			& figure {
-				margin: 0;
-				padding: 0;
-			}
-			& a {
-				color: inherit !important;
-				cursor: inherit;
-				text-decoration: inherit;
-			}
-		}
-		& header {}
-		& nav {
-			margin: 0;
-			padding: 5px;
-			display: flex;
-			align-items: center;
-			& div.empty {
-				flex: 1;
-			}
-			& button {
-				background: none;
-				border: none;
-				width: 8em;
-				height: 54px;
-				display: flex;
-				justify-content: center;
-				flex-direction: column;
-				align-items: center;
-				& figure {
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					& figcaption {
-						font-variant: small-caps;
-					}
-				}
-				&.icon {
-					width: 2.5rem;
-					& figcaption {
-						display: none;
-					}
-				}
-			}
-		}
-		& main {
-			display: flex;
-			flex-direction: column;
-			align-items: stretch;
-			flex: 1;
-			padding: 1em;
-			overflow: hidden;
-			& .scroll {
-				flex: 1;
-				overflow-y: auto;
-			}
-		}
-		& footer {
-			width: 100%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-		&[theme='light'] {
-			background: white;
-			color: black;
-			& a {
-				color: blue;
-			}
-			& nav {
-				border-bottom: 1px solid black;
-			}
-			& footer {
-				border-top: 1px solid black;
-			}
-		}
-		&[theme='dark'] {
-			background: black;
-			color: white;
-			& a {
-				color: yellow;
-			}
-			& button img.mono {
-				filter: invert(1);
-			}
-			& nav {
-				border-bottom: 1px solid white;
-			}
-			& footer {
-				border-top: 1px solid white;
-			}
-		}
-	}
 }
+
+head, title, link, meta, style, script, preload {
+	display: none;
+}
+
+body {
+	margin: 0;
+	padding: 5px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+	overflow: hidden;
+}
+
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+button {
+	color: inherit;
+	margin: 0;
+	padding: 5px;
+}
+
+button figure {
+	margin: 0;
+	padding: 0;
+}
+
+button a {
+	color: inherit !important;
+	cursor: inherit;
+	text-decoration: inherit;
+}
+
+header {}
+
+nav {
+	margin: 0;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+}
+
+nav div.empty {
+	flex: 1;
+}
+
+nav button {
+	background: none;
+	border: none;
+	width: 8em;
+	height: 54px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+nav button figure {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+nav button figure figcaption {
+	font-variant: small-caps;
+}
+
+nav button .icon {
+	width: 2.5rem;
+}
+
+nav button .icon figcaption {
+	display: none;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	flex: 1;
+	padding: 1em;
+	overflow: hidden;
+}
+
+main .scroll {
+	flex: 1;
+	overflow-y: auto;
+}
+
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+body[theme='light'] {
+	background: white;
+	color: black;
+}
+
+body[theme='light']a {
+	color: blue;
+}
+
+body[theme='light']nav {
+	border-bottom: 1px solid black;
+}
+
+body[theme='light']footer {
+	border-top: 1px solid black;
+}
+
+body[theme='dark'] {
+	background: black;
+	color: white;
+}
+
+body[theme='dark']a {
+	color: yellow;
+}
+
+body[theme='dark']button img.mono {
+	filter: invert(1);
+}
+
+body[theme='dark']nav {
+	border-bottom: 1px solid white;
+}
+
+body[theme='dark']footer {
+	border-top: 1px solid white;
+}
+
 @media print {
 	body {
 		background: white;
