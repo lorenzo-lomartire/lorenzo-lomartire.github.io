@@ -109,7 +109,21 @@ footer {
 	align-items: center;*/
 }
 
-body[theme='light'] {
+@media (prefers-color-scheme: light) {
+	body {
+		color: #000;
+		background-color: #FFF;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		color: #FFF;
+		background-color: #000;
+	}
+}
+
+/*body[theme='light'] {
 	background: white;
 	color: black;
 }
@@ -146,6 +160,7 @@ body[theme='dark'] nav {
 body[theme='dark'] footer {
 	border-top: 1px solid white;
 }
+*/
 
 @media print {
 	:root {
