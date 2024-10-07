@@ -1,6 +1,10 @@
-{
+ {
 	"name": "Lorenzo Lomartire",
 	"icons": [
+		{
+			"src": "logo.svg",
+			"type": "image/svg+xml"
+		},
 		{
 			"src": "/icons/main/1240.png",
 			"type": "image/png",
