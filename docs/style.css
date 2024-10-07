@@ -30,6 +30,10 @@ body {
 	user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
+.scroll {
+	overflow-y: auto;
+}
+
 button {
 	color: inherit;
 	margin: 0;
@@ -99,7 +103,6 @@ main {
 	flex: 1;
 	text-align: justify;
 	line-height: 1.6;
-	overflow-y: auto;
 }
 
 footer {
