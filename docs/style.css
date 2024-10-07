@@ -5,7 +5,7 @@
 	height: 100dvh;
 	display: flex;
 	font-size: calc(40vw / 9);
-	font-family: Noto Sans;
+	font-family: Noto Sans, sans-serif;
 }
 
 @media screen and (max-width: 315px) {
