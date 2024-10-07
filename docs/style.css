@@ -12,17 +12,6 @@
 	}
 }
 
-/*#LCP {
-	pointer-events: none;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 99dvw;
-	height: 99dvh;
-	max-width: 99vw;
-	max-height: 99vh;'
-}*/
-
 preload {
 	display: none;
 }
