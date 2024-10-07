@@ -2,7 +2,7 @@
 	width: 100dvw;
 	height: 100dvh;
 	display: flex;
-	font-size: calc(40vw / 9);
+	font-size: 16px;
 	font-family: Noto Sans, sans-serif;
 }
 
@@ -10,10 +10,6 @@
 	:root {
 		font-size: 14px;
 	}
-}
-
-preload {
-	display: none;
 }
 
 body {
@@ -38,7 +34,7 @@ body {
 button {
 	color: inherit;
 	margin: 0;
-	padding: 5px;
+	padding: 0.2em;
 }
 
 button figure {
