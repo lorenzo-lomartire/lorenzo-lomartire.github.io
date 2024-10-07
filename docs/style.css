@@ -3,7 +3,7 @@
 	height: 100dvh;
 	display: flex;
 	font-size: 16px;
-	font-family: Noto Sans, sans-serif;
+	font-family: 'Noto Sans', sans-serif;
 }
 
 @media screen and (max-width: 315px) {
@@ -164,7 +164,7 @@ body[theme='dark'] footer {
 
 @media print {
 	:root {
-		font-family: Century, serif;
+		font-family: 'Noto Serif', serif;
 	}
 	body {
 		background: white;
