@@ -12,6 +12,17 @@
 	}
 }
 
+#LCP {
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 99vw;
+	height: 99vh;
+	max-width: 99vw;
+	max-height: 99vh;'
+}
+
 preload {
 	display: none;
 }
