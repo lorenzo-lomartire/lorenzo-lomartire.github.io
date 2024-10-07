@@ -23,7 +23,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	overflow: hidden;
+	overflow-y: auto;
 }
 
 .noselect {
@@ -54,6 +54,8 @@ button a {
 
 header {
 	padding: 0.4em;
+	position: sticky;
+	top: 0;
 }
 
 nav {
@@ -99,7 +101,6 @@ nav button .icon figcaption {
 main {
 	padding: 0.6em 1em;
 	flex: 1;
-	overflow-y: auto;
 	text-align: justify;
 	line-height: 1.6;
 }
