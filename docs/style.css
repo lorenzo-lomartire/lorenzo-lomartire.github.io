@@ -190,7 +190,7 @@ body[theme='dark'] footer {
 		background: white;
 		color: black;
 	}
-	nav {
+	header {
 		display: none;
 	}
 }
