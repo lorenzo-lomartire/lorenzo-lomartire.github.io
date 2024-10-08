@@ -55,7 +55,7 @@ header {
 	position: sticky;
 	top: 0;
 	height: 4em;
-	border-bottom: 0.2rem solid;
+	border-bottom: 0.1rem solid;
 }
 
 a.logo {
@@ -117,7 +117,7 @@ main {
 
 footer {
 	padding: 0.4em;
-	border-top: 0.2rem solid;
+	border-top: 0.1rem solid;
 	text-align: center;
 }
 
