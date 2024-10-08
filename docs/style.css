@@ -135,7 +135,7 @@ footer {
 		color: #000;
 		background: #FFF;
 	}
-	header {
+	header, footer {
 		background: #EEE;
 	}
 }
@@ -145,7 +145,7 @@ footer {
 		color: #FFF;
 		background: #000;
 	}
-	header {
+	header, footer {
 		background: #333;
 	}
 }
