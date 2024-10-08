@@ -55,6 +55,7 @@ header {
 	position: sticky;
 	top: 0;
 	height: 4em;
+	border-bottom: 1px solid;
 }
 
 a.logo {
@@ -127,7 +128,7 @@ footer {
 		background: #FFF;
 	}
 	header {
-		background: #DDD;
+		background: #EEE;
 	}
 }
 
@@ -137,7 +138,7 @@ footer {
 		background: #000;
 	}
 	header {
-		background: #222;
+		background: #333;
 	}
 }
 
