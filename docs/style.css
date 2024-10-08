@@ -55,7 +55,7 @@ header {
 	position: sticky;
 	top: 0;
 	height: 4em;
-	border-bottom: 1px solid;
+	border-bottom: 0.2rem solid;
 }
 
 a.logo {
@@ -117,9 +117,8 @@ main {
 
 footer {
 	padding: 0.4em;
-	/*display: flex;
-	justify-content: center;
-	align-items: center;*/
+	border-top: 0.2rem solid;
+	text-align: center;
 }
 
 @media (prefers-color-scheme: light) {
