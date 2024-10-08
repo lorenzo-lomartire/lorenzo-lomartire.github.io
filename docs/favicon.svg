@@ -1,8 +1,8 @@
 <?xml version='1.0' standalone='no'?>
 <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
 <svg viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' width='50' height='50'>
-	<circle cx='512' cy='512' r='512' fill='#ffdf5f' stroke='none'/>
-	<g transform='translate(0.000000,1024.000000) scale(0.100000,-0.100000)' fill='#801212' stroke='none'>
+	<circle cx='512' cy='512' r='512' fill='#fd6' stroke='none'/>
+	<g transform='translate(0.000000,1024.000000) scale(0.100000,-0.100000)' fill='#811' stroke='none'>
 		<path d='M4870 10234 c-384 -25 -682 -69 -1001 -149 -766 -192 -1483 -564
 -2090 -1085 -134 -116 -414 -395 -530 -530 -278 -323 -524 -691 -704 -1050
 -283 -565 -452 -1150 -521 -1805 -24 -223 -24 -767 0 -990 93 -877 363 -1631
