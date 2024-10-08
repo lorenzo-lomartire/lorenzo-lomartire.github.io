@@ -34,6 +34,13 @@ body {
 	overflow-y: auto;
 }
 
+a {
+	font-weight: 500;
+	text-decoration: none;
+	border-bottom: 0.1em solid;
+}
+
+/*
 button {
 	color: inherit;
 	margin: 0;
@@ -50,6 +57,7 @@ button a {
 	cursor: inherit;
 	text-decoration: inherit;
 }
+*/
 
 header {
 	position: sticky;
