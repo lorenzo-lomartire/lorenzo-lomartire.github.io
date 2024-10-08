@@ -123,14 +123,20 @@ footer {
 @media (prefers-color-scheme: light) {
 	body {
 		color: #000;
-		background-color: #FFF;
+		background: #FFF;
+	}
+	header {
+		background: #DDD;
 	}
 }
 
 @media (prefers-color-scheme: dark) {
 	body {
 		color: #FFF;
-		background-color: #000;
+		background: #000;
+	}
+	header {
+		background: #222;
 	}
 }
 
