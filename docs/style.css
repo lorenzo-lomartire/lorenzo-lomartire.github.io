@@ -34,10 +34,11 @@ body {
 	overflow-y: auto;
 }
 
-a {
+:link, :visited {
 	font-weight: 500;
 	text-decoration: none;
 	border-bottom: 0.1em solid;
+	cursor: pointer;
 }
 
 /*
@@ -137,6 +138,15 @@ footer {
 	}
 	header, footer {
 		background: #EEE;
+	}
+	:link {
+		color: #00E;
+	}
+	:visited {
+		color: #518;
+	}
+	:link:active, :visited:active {
+		color: #F00;
 	}
 }
 
