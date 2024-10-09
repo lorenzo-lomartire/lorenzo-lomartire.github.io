@@ -39,6 +39,11 @@ body {
 	text-decoration: none;
 	border-bottom: 0.1em solid;
 	cursor: pointer;
+	transition: border-color 1s;
+}
+
+:link:hover, :visited:hover {
+	border-color: red;
 }
 
 :focus-visible {
