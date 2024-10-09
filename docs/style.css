@@ -148,6 +148,9 @@ footer {
 	header, footer {
 		background: #222;
 	}
+	a {
+		filter: brightness(3);
+	}
 }
 
 /*
