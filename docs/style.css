@@ -46,7 +46,7 @@ body {
 }
 
 :link:hover, :visited:hover {
-	padding: 0.1em;
+	padding: 0.1em 0;
 	border-bottom: 0;
 	background-size: 100% 0.1em;
 	transition: background-size 1s;
@@ -54,6 +54,15 @@ body {
 
 :focus-visible {
 	outline: auto;
+}
+
+a.logo, a.logo:hover {
+	display: block;
+	height: 100%;
+	aspect-ratio: 1 / 1;
+	background: center / contain no-repeat url('logo.svg');
+	mix-blend-mode: difference;
+	border: none;
 }
 
 /*
@@ -80,15 +89,6 @@ header {
 	top: 0;
 	height: 4em;
 	border-bottom: 0.1rem solid;
-}
-
-a.logo {
-	display: block;
-	height: 100%;
-	aspect-ratio: 1 / 1;
-	background: center / contain no-repeat url('logo.svg');
-	mix-blend-mode: difference;
-	border: none;
 }
 
 /*
