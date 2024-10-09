@@ -41,17 +41,18 @@ body {
 	cursor: pointer;
 }
 
+:link:hover, :visited:hover {
+	border-bottom: 0;
+}
+
 :link::after, :visited::after {
 	content: '';
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 100%;
+	width: 0;
 	border-bottom: 0.1em solid transparent;
 }
 
 :link:hover::after, :visited:hover::after {
-	width: 0;
+	width: 100%;
 	transition: width 1s;
 }
 
