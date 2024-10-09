@@ -41,6 +41,10 @@ body {
 	cursor: pointer;
 }
 
+:focus-visible {
+	outline: auto;
+}
+
 /*
 button {
 	color: inherit;
@@ -157,9 +161,6 @@ footer {
 	}
 	header, footer {
 		background: #222;
-	}
-	a {
-		filter: brightness(3);
 	}
 }
 
