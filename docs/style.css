@@ -37,7 +37,7 @@ body {
 :link, :visited {
 	font-weight: 500;
 	text-decoration: none;
-	background-size: 100% 0.1em;
+	background-size: 100% 0.1em, 0 0.1em;
 	background-position-x: 0;
 	background-position-y: 100%;
 	background-repeat: no-repeat;
@@ -45,15 +45,7 @@ body {
 }
 
 :link:hover, :visited:hover {
-	background-size: 0 0.1em;
-}
-
-:link::after, :visited::after {
-	background-size: 0 0.1em;
-}
-
-:link:hover::after, :visited:hover::after {
-	background-size: 100% 0.1em;
+	background-size: 0 0.1em, 100% 0.1em;
 	transition: background-size 1s;
 }
 
@@ -161,15 +153,15 @@ footer {
 	}
 	:link, :link::after {
 		color: #00E;
-		background-image: linear-gradient(#00E, #00E);
+		background-image: linear-gradient(#00E, #00E), linear-gradient(#00E, #00E);
 	}
 	:visited, :visited::after {
 		color: #518;
-		background-image: linear-gradient(#518, #518);
+		background-image: linear-gradient(#518, #518), linear-gradient(#518, #518);
 	}
 	:link:active, :visited:active {
 		color: #F00;
-		background-image: linear-gradient(#F00, #F00);
+		background-image: linear-gradient(#F00, #F00), linear-gradient(#F00, #F00);
 	}
 }
 
