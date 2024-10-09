@@ -4,7 +4,8 @@
 		{
 			"src": "icon.svg",
 			"type": "image/svg+xml",
-			"sizes": "any"
+			"sizes": "any",
+			"purpose": "maskable"
 		}
 	],
 	"id": "lorenzo-lomartire.github.io",
