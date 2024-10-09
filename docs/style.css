@@ -49,11 +49,12 @@ body {
 }
 
 :link::after, :visited::after {
-	content: '';
+	background-size: 0 0.1em;
 }
 
 :link:hover::after, :visited:hover::after {
-	
+	background-size: 100% 0.1em;
+	transition: background-size 1s;
 }
 
 :focus-visible {
@@ -158,16 +159,17 @@ footer {
 	header, footer {
 		background: #EEE;
 	}
-	:link {
+	:link, :link::after {
 		color: #00E;
 		background-image: linear-gradient(#00E, #00E);
 	}
-	:visited {
+	:visited, :visited::after {
 		color: #518;
 		background-image: linear-gradient(#518, #518);
 	}
 	:link:active, :visited:active {
 		color: #F00;
+		background-image: linear-gradient(#F00, #F00);
 	}
 }
 
