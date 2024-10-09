@@ -37,7 +37,12 @@ body {
 :link, :visited {
 	font-weight: 500;
 	text-decoration: none;
-	border-bottom: 0.1em solid;
+	/*border-bottom: 0.1em solid;*/
+	background-color: red;
+	background-size: 100% 0.1em;
+	background-position-x: 0;
+	background-position-y: 100%;
+	background-repeat: no-repeat;
 	cursor: pointer;
 }
 
