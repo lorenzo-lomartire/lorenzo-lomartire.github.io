@@ -1,6 +1,6 @@
 <?xml version='1.0' standalone='no'?>
 <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-<svg viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' width='50' height='50'>
+<svg viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' width='32' height='32'>
 	<circle cx='512' cy='512' r='512' fill='#01B'/>
 	<g transform='translate(0.000000,1024.000000) scale(0.100000,-0.100000)' fill='#FFF'>
 		<path d='M4725 8839 c-88 -13 -161 -36 -249 -80 -559 -278 -1069 -1120 -1225
