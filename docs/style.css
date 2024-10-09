@@ -5,6 +5,7 @@
 	font-size: 16px;
 	font-family: 'Noto Sans', sans-serif;
 	overscroll-behavior: none;
+	scrollbar-width: thin;
 }
 
 @media screen and (max-width: 315px) {
@@ -157,6 +158,9 @@ footer {
 }
 
 @media (prefers-color-scheme: light) {
+	:root {
+		scrollbar-color: #555 #AAAA;
+	}
 	body {
 		color: #000;
 		background: #FFF;
@@ -179,6 +183,9 @@ footer {
 }
 
 @media (prefers-color-scheme: dark) {
+	:root {
+		scrollbar-color: #DDD #EEEA;
+	}
 	body {
 		color: #FFF;
 		background: #000;
