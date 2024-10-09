@@ -5,6 +5,12 @@
 			"src": "icon.svg",
 			"type": "image/svg+xml",
 			"sizes": "any",
+			"purpose": "any"
+		},
+		{
+			"src": "maskable.svg",
+			"type": "image/svg+xml",
+			"sizes": "any",
 			"purpose": "maskable"
 		}
 	],
