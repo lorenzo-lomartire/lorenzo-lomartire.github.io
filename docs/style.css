@@ -49,7 +49,7 @@ body {
 	padding: 0.1em 0;
 	border-bottom: 0;
 	background-size: 100% 0.1em;
-	transition: background-size 1s;
+	transition: background-size 1s ease-in-out;
 	-webkit-transition: background-size 1s;
 }
 
