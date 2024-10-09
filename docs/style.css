@@ -37,15 +37,16 @@ body {
 :link, :visited {
 	font-weight: 500;
 	text-decoration: none;
+	box-sizing: border-box;
 	border-bottom: 0.1em solid;
 	background-size: 0 0.1em;
-	background-position-x: 0;
-	background-position-y: 100%;
+	background-position: 0 100%;
 	background-repeat: no-repeat;
 	cursor: pointer;
 }
 
 :link:hover, :visited:hover {
+	padding: 0.1em;
 	border-bottom: 0;
 	background-size: 100% 0.1em;
 	transition: background-size 1s;
