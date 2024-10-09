@@ -46,7 +46,7 @@ body {
 
 :link:hover, :visited:hover {
 	background-size: 0 0.1em, 100% 0.1em;
-	transition: background-size 1s;
+	transition: unset, background-size 1s;
 }
 
 :focus-visible {
