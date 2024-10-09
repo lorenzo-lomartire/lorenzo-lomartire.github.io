@@ -161,6 +161,12 @@ footer {
 	:root {
 		scrollbar-color: #555 #AAAA;
 	}
+	::-webkit-scrollbar-thumb {
+		background: #555;
+	}
+	::-webkit-scrollbar-track {
+		background: #AAAA;
+	}
 	body {
 		color: #000;
 		background: #FFF;
@@ -185,6 +191,12 @@ footer {
 @media (prefers-color-scheme: dark) {
 	:root {
 		scrollbar-color: #DDD #EEEA;
+	}
+	::-webkit-scrollbar-thumb {
+		background: #DDD;
+	}
+	::-webkit-scrollbar-track {
+		background: #EEEA;
 	}
 	body {
 		color: #FFF;
