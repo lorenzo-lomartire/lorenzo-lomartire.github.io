@@ -173,8 +173,8 @@ footer {
 		background-image: linear-gradient(#518, #518);
 	}
 	:any-link:active {
-		color: #E00;
-		background-image: linear-gradient(#E00, #E00);
+		color: #B10;
+		background-image: linear-gradient(#B10, #B10);
 	}
 }
 
@@ -192,8 +192,8 @@ footer {
 		-webkit-text-stroke: .005em white;
 	}
 	:visited, :visited::after {
-		color: #619;
-		background-image: linear-gradient(#619, #619);
+		color: #81B;
+		background-image: linear-gradient(#81B, #81B);
 		-webkit-text-stroke: .005em white;
 	}
 	:any-link:active {
