@@ -173,7 +173,7 @@ footer {
 		background-image: linear-gradient(#518, #518);
 	}
 	:any-link:active {
-		color: #E00
+		color: #E00;
 		background-image: linear-gradient(#E00, #E00);
 	}
 }
