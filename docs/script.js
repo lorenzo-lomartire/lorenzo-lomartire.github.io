@@ -1,9 +1,10 @@
-const installButton = document.getElementById('install');
 document.getElementsByClassName('close').forEach(element => {
 	element.addEventListener('click', () => {
-		element.parentElement.style.display = 'none';
+		element.parentElement.setAttribute('hidden', '');
 	});
 });
+
+const installButton = document.getElementById('install');
 
 window.addEventListener('beforeinstallprompt', async (event) => {
 	event.preventDefault();
