@@ -1,5 +1,6 @@
 Array.from(document.getElementsByClassName('close')).forEach(element => {
-	element.addEventListener('click', () => {
+	element.addEventListener('click', (event) => {
+		event.stopPropagation();
 		element.parentElement.setAttribute('hidden', '');
 	});
 });
