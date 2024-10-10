@@ -1,4 +1,9 @@
 const installButton = document.getElementById('install');
+document.getElementsByClassName('close').forEach(element => {
+	element.addEventListener('click', () => {
+		element.parentElement.style.display = 'none';
+	});
+});
 
 window.addEventListener('beforeinstallprompt', async (event) => {
 	event.preventDefault();
