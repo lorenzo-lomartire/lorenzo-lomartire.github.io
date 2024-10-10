@@ -1,4 +1,5 @@
-@namespace "http://www.w3.org/1999/xhtml";
+@charset 'UTF-8';
+@namespace 'http://www.w3.org/1999/xhtml';
 
 :root {
 	width: 100dvw;
