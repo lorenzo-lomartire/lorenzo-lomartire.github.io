@@ -39,16 +39,27 @@
 		<meta http-equiv='content-language' content='en, it'>
 		<meta http-equiv='default-style' content='style.css'>
 		<meta http-equiv='content-security-policy'
-		      content="upgrade-insecure-requests;
-		      default-src 'none';
-		      frame-ancestors 'none';
-		      manifest-src 'self';
+		      content="default-src 'none';
+		      script-src: 'none';
 		      script-src-elem 'self' https://www.googletagmanager.com;
+		      style-src 'none';
 		      style-src-elem 'self' https://fonts.googleapis.com;
-		      style-src 'self' https://fonts.googleapis.com;
-		      font-src https://fonts.gstatic.com;
+		      img-src 'self' data:;
 		      connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://stats.g.doubleclick.net;
-		      img-src 'self' data:;">
+		      font-src https://fonts.gstatic.com;
+		      object-src 'none';
+		      media-src 'none';
+		      frame-src 'none';
+		      child-src 'none';
+		      form-action 'none';
+		      plugin-types 'none';
+		      base-uri 'self';
+		      worker-src 'none;
+		      manifest-src 'self';
+		      prefetch-src 'none';
+		      navigate-to 'none';
+		      upgrade-insecure-requests;
+		      block-all-mixed-content;">
 		<meta name='google-site-verification' content='PN1JVMBfluSU0EQfq7Ieg8wyUem97diq7tQGqOjj2DU'>
 		<link rel='canonical' href='https://lorenzo-lomartire.github.io/'>
 		<link rel='icon' href='favicon.svg'>
