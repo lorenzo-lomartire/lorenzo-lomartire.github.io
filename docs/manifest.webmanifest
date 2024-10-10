@@ -18,8 +18,8 @@
 			"sizes": "1024x1024"
 		}
 	],
-	"id": "lorenzo-lomartire.github.io",
-	"start_url": "lorenzo-lomartire.github.io",
+	"id": "https://lorenzo-lomartire.github.io",
+	"start_url": "https://lorenzo-lomartire.github.io",
 	"background_color": "white",
 	"display": "standalone",
 	"theme_color": "black",
