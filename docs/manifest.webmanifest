@@ -4,14 +4,18 @@
 		{
 			"src": "icon.svg",
 			"type": "image/svg+xml",
-			"sizes": "any",
-			"purpose": "any"
+			"sizes": "any"
 		},
 		{
 			"src": "maskable.svg",
 			"type": "image/svg+xml",
 			"sizes": "any",
 			"purpose": "maskable"
+		},
+		{
+			"src": "icon.png",
+			"type": "image/png",
+			"sizes": "1024x1024"
 		}
 	],
 	"id": "lorenzo-lomartire.github.io",
