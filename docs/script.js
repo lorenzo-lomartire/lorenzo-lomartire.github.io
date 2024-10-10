@@ -1,4 +1,4 @@
-document.getElementsByClassName('close').forEach(element => {
+Array.from(document.getElementsByClassName('close')).forEach(element => {
 	element.addEventListener('click', () => {
 		element.parentElement.setAttribute('hidden', '');
 	});
