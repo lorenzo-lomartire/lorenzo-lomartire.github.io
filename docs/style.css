@@ -198,16 +198,16 @@ footer {
 		background: #222;
 	}
 	:link, :link::after {
-		color: #9BF;
-		background-image: linear-gradient(#49E, #06E);
+		color: #49E;
+		background-image: linear-gradient(#49E, #49E);
 	}
 	:visited, :visited::after {
-		color: #FBF;
-		background-image: linear-gradient(#A5D, #81B);
+		color: #A5D;
+		background-image: linear-gradient(#A5D, #A5D);
 	}
 	:any-link:active {
-		color: #F66;
-		background-image: linear-gradient(#E22, #F00);
+		color: #E22;
+		background-image: linear-gradient(#E22, #E22);
 	}
 }
 
