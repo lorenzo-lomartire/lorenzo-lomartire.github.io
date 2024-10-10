@@ -16,6 +16,12 @@
 			"src": "icon.png",
 			"type": "image/png",
 			"sizes": "1024x1024"
+		},
+		{
+			"src": "maskable.png",
+			"type": "image/png",
+			"sizes": "1024x1024",
+			"purpose": "maskable"
 		}
 	],
 	"id": "https://lorenzo-lomartire.github.io",
