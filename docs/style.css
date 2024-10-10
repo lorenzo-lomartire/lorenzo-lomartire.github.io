@@ -33,10 +33,6 @@ body {
 	overflow-y: auto;
 }
 
-::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track {
-	background: transparent;
-}
-
 :any-link {
 	font-weight: 500;
 	text-decoration: none;
@@ -169,12 +165,6 @@ footer {
 	:root {
 		scrollbar-color: #555 #AAAA;
 	}
-	:hover::-webkit-scrollbar-thumb {
-		background: #555;
-	}
-	:hover::-webkit-scrollbar-track {
-		background: #AAAA;
-	}
 	body {
 		color: #000;
 		background: #FFF;
@@ -200,12 +190,6 @@ footer {
 	:root {
 		scrollbar-color: #DDD #EEEA;
 	}
-	:hover::-webkit-scrollbar-thumb {
-		background: #DDD;
-	}
-	:hover::-webkit-scrollbar-track {
-		background: #EEEA;
-	}
 	body {
 		color: #FFF;
 		background: #000;
@@ -216,14 +200,10 @@ footer {
 	:link, :link::after {
 		color: #06E;
 		background-image: linear-gradient(#06E, #06E);
-		/*-webkit-text-stroke: .005em white;
-		text-stroke: .005em white;*/
 	}
 	:visited, :visited::after {
 		color: #81B;
 		background-image: linear-gradient(#81B, #81B);
-		/*-webkit-text-stroke: .005em white;
-		text-stroke: .005em white;*/
 	}
 	:any-link:active {
 		color: #F00;
