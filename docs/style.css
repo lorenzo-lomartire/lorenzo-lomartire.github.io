@@ -74,6 +74,14 @@ a.logo, a.logo:hover {
 	border: none;
 }
 
+button#install {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 1em;
+}
+
 /*
 button {
 	color: inherit;

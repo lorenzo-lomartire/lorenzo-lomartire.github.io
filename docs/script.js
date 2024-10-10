@@ -1,3 +1,25 @@
+const installButton = document.getElementById('install');
+
+window.addEventListener('beforeinstallprompt', async (event) => {
+	event.preventDefault();
+	installButton.prompt = event;
+	installButton.removeAttribute('hidden');
+});
+
+installButton.addEventListener('click', async () => {
+	if (!installButton.prompt)
+		return;
+	const result = await installButton.prompt();
+	console.log('Install prompt was: ' + result.outcome);
+	installButton.prompt = null;
+	installButton.setAttribute('hidden', '');
+});
+
+window.addEventListener('appinstalled', () => {
+	installButton.prompt = null;
+	installButton.setAttribute('hidden', '');
+});
+
 /*
 if (location.toString() !== location.origin + '/') {
 	location.replace(location.origin + '/');
