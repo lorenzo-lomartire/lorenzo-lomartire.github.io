@@ -206,14 +206,14 @@ footer {
 	:link, :link::after {
 		color: #06E;
 		background-image: linear-gradient(#06E, #06E);
-		-webkit-text-stroke: .005em white;
-		text-stroke: .005em white;
+		/*-webkit-text-stroke: .005em white;
+		text-stroke: .005em white;*/
 	}
 	:visited, :visited::after {
 		color: #81B;
 		background-image: linear-gradient(#81B, #81B);
-		-webkit-text-stroke: .005em white;
-		text-stroke: .005em white;
+		/*-webkit-text-stroke: .005em white;
+		text-stroke: .005em white;*/
 	}
 	:any-link:active {
 		color: #F00;
