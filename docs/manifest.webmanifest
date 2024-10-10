@@ -21,7 +21,7 @@
 	"id": "lorenzo-lomartire.github.io",
 	"start_url": "lorenzo-lomartire.github.io",
 	"background_color": "white",
-	"display": "fullscreen",
+	"display": "standalone",
 	"theme_color": "black",
 	"description": "Lorenzo Lomartire"
 }
