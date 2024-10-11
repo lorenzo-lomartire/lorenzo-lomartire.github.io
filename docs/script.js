@@ -6,24 +6,25 @@ Array.from(document.getElementsByClassName('close')).forEach(element => {
 });
 
 const installButton = document.getElementById('install');
+let installPrompt = null;
 
 window.addEventListener('beforeinstallprompt', async (event) => {
 	event.preventDefault();
-	installButton.prompt = event;
-	installButton.removeAttribute('hidden');
+	installPrompt = event;
+	installButton.parentElement.removeAttribute('hidden');
 });
 
 installButton.addEventListener('click', async () => {
-	if (!installButton.prompt)
+	if (!installPrompt)
 		return;
-	await installButton.prompt.prompt();
-	installButton.prompt = null;
-	installButton.setAttribute('hidden', '');
+	await installPrompt.prompt();
+	installPrompt = null;
+	installButton.parentElement.setAttribute('hidden', '');
 });
 
 window.addEventListener('appinstalled', () => {
-	installButton.prompt = null;
-	installButton.setAttribute('hidden', '');
+	installPrompt = null;
+	installButton.parentElement.setAttribute('hidden', '');
 });
 
 /*

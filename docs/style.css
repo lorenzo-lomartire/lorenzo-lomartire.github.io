@@ -73,12 +73,17 @@ a.logo, a.logo:hover {
 	border: none;
 }
 
-button#install {
-	position: absolute;
-	top: 0;
-	left: 0;
+.banner {
+	position: fixed;
 	width: 100%;
-	padding: 1em;
+}
+
+.banner .close {
+	float: right;
+}
+
+button#install {
+	margin: 0 auto;
 }
 
 /*
