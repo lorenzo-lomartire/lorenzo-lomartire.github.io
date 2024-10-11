@@ -75,6 +75,8 @@ a.logo, a.logo:hover {
 
 .modal .close {
 	padding: .2em .5em;
+	background: none;
+	border: none;
 	transition: .6s;
 }
 
@@ -180,6 +182,10 @@ footer {
 	button#install:active {
 		color: #FFF;
 	}
+
+	.modal .close:active {
+		color: #FFF;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
@@ -233,6 +239,10 @@ footer {
 
 	button#install:active {
 		color: #000;
+	}
+
+	.modal .close:active {
+		color: #AAA;
 	}
 }
 
