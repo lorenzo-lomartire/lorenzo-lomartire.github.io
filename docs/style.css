@@ -82,6 +82,11 @@ a.logo, a.logo:hover {
 
 .modal .close {
 	padding: .2em .5em;
+	transition: .6s;
+}
+
+.modal .close:hover {
+	transform: rotate(180deg);
 }
 
 button#install {
@@ -89,6 +94,10 @@ button#install {
 	border: none;
 	background: none;
 	transition: .6s;
+}
+
+button#install:hover {
+	font-size: larger;
 }
 
 /*
