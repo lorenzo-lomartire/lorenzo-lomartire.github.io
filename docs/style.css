@@ -149,7 +149,7 @@ footer {
 	text-align: center;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light), print {
 	:root {
 		scrollbar-color: #555 #AAAA;
 	}
@@ -207,7 +207,7 @@ footer {
 	}
 }
 
-@media (prefers-color-scheme: dark), print {
+@media (prefers-color-scheme: dark) {
 	:root {
 		scrollbar-color: #DDD #EEEA;
 	}
