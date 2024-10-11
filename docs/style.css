@@ -78,6 +78,7 @@ a.logo, a.logo:hover {
 	width: calc(100% - 2em);;
 	margin: 1em;
 	display: flex;
+	transition: .6s;
 }
 
 .modal .close {
