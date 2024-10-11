@@ -77,14 +77,15 @@ a.logo, a.logo:hover {
 	position: fixed;
 	width: calc(100% - 2em);;
 	margin: 1em;
+	display: flex;
 }
 
-.banner .close {
-	float: right;
+.modal .close {
+	padding: 0.2em;
 }
 
 button#install {
-	padding: 0.5em;
+	margin: 0 auto;
 	border: none;
 	background: none;
 }
