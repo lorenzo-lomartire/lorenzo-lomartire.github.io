@@ -75,8 +75,7 @@ a.logo, a.logo:hover {
 
 .modal {
 	position: fixed;
-	box-sizing: border-box;
-	width: 100%;
+	width: calc(100% - 2em);;
 	margin: 1em;
 }
 
@@ -85,7 +84,9 @@ a.logo, a.logo:hover {
 }
 
 button#install {
-	margin: 0 auto;
+	padding: 0.5em;
+	border: none;
+	background: none;
 }
 
 /*
