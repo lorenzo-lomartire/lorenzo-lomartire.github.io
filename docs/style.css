@@ -60,11 +60,11 @@ button {
 	outline: auto;
 }
 
-a.logo, a.logo:hover {
+a.logo {
 	display: block;
 	height: 100%;
 	aspect-ratio: 1 / 1;
-	background: center / contain no-repeat url('logo.svg');
+	mask: url('logo.svg') no-repeat center contain;
 	border: none;
 }
 
@@ -189,6 +189,10 @@ footer {
 	.modal .close:active span {
 		color: #AAA;
 	}
+
+	a.logo {
+		background: #FFF;
+	}
 }
 
 @media (prefers-color-scheme: light), print {
@@ -250,6 +254,10 @@ footer {
 
 	.modal .close:active span {
 		color: #FFF;
+	}
+
+	a.logo {
+		background: #000;
 	}
 }
 
