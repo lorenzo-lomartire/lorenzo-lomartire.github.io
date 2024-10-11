@@ -64,8 +64,9 @@ a.logo {
 	display: block;
 	height: 100%;
 	aspect-ratio: 1 / 1;
-	mask: url('logo.svg') no-repeat center contain;
 	border: none;
+	-webkit-mask: url('logo.svg') no-repeat center contain;
+	mask: url('logo.svg') no-repeat center contain;
 }
 
 .modal:not([hidden]) {
