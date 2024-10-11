@@ -97,7 +97,7 @@ button#install {
 }
 
 button#install:hover {
-	font-size: larger;
+	font-weight: 600;
 }
 
 /*
