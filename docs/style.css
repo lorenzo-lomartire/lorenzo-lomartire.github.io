@@ -65,7 +65,6 @@ a.logo, a.logo:hover {
 	height: 100%;
 	aspect-ratio: 1 / 1;
 	background: center / contain no-repeat url('logo.svg');
-	mix-blend-mode: difference;
 	border: none;
 }
 
