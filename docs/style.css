@@ -202,7 +202,7 @@ footer {
 		color: #FFF;
 	}
 
-	.modal .close:active {
+	.modal .close:active span {
 		color: #FFF;
 	}
 }
@@ -260,7 +260,7 @@ footer {
 		color: #000;
 	}
 
-	.modal .close:active {
+	.modal .close:active span {
 		color: #AAA;
 	}
 }
