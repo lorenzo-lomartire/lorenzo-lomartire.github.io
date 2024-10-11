@@ -94,7 +94,7 @@ a.logo, a.logo:hover {
 	transition: .6s;
 }
 
-.modal .close:hover {
+.modal .close:hover span {
 	transform: rotate(180deg);
 }
 
