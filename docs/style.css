@@ -52,14 +52,6 @@ body {
 	transition: background-size .6s ease-in-out;
 }
 
-@media (forced-colors: active) {
-	:any-link:hover {
-		padding: 0;
-		border-bottom: .1em solid;
-		background: 0;
-	}
-}
-
 :focus-visible {
 	outline: auto;
 }
@@ -236,11 +228,23 @@ footer {
 	}
 
 	button#install:hover {
-		color: #222;
+		color: #DDD;
 	}
 
 	button#install:active {
 		color: #000;
+	}
+}
+
+@media (forced-colors: active) {
+	:any-link:hover {
+		padding: 0;
+		border-bottom: .1em solid;
+		background: 0;
+	}
+
+	.modal:not([hidden]) {
+		border: .1em solid;
 	}
 }
 
