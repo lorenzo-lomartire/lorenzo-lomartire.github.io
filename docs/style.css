@@ -198,7 +198,7 @@ footer {
 		background-image: linear-gradient(#B10, #B10);
 	}
 
-	dialog {
+	.modal {
 		background: #CCC;
 	}
 }
@@ -232,7 +232,7 @@ footer {
 		background-image: linear-gradient(#E22, #E22);
 	}
 
-	dialog {
+	.modal {
 		background: #444;
 	}
 }
