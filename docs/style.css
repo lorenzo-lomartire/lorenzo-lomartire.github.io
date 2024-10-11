@@ -162,6 +162,10 @@ footer {
 		background-image: linear-gradient(#E22, #E22);
 	}
 
+	a.logo {
+		color: #FFF;
+	}
+
 	.modal {
 		background: #444;
 	}
@@ -218,6 +222,10 @@ footer {
 	:any-link:active {
 		color: #B10;
 		background-image: linear-gradient(#B10, #B10);
+	}
+
+	a.logo {
+		color: #000;
 	}
 
 	.modal {
