@@ -75,7 +75,16 @@ a.logo, a.logo:hover {
 	margin: 1em;
 	padding: 1em;
 	display: flex;
+	border-radius: .8em;
 	transition: .6s;
+}
+
+.modal:has(button#install:hover) {
+	border-radius: 1.2em;
+}
+
+.modal:has(button#install:active) {
+	border-radius: 1.6em;
 }
 
 .modal .close {
