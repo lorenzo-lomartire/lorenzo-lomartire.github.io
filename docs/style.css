@@ -202,7 +202,7 @@ footer {
 	}
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark), print {
 	:root {
 		scrollbar-color: #DDD #EEEA;
 	}
@@ -275,11 +275,6 @@ footer {
 @media print {
 	:root {
 		font-family: 'Noto Serif', serif;
-	}
-
-	body {
-		background: #FFF;
-		color: #000;
 	}
 
 	header, footer, .modal:not([hidden]) {
