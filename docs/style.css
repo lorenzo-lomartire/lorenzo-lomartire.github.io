@@ -109,25 +109,6 @@ button#install {
 	transition: .6s;
 }
 
-/*
-button {
-	color: inherit;
-	margin: 0;
-	padding: 0.2em;
-}
-
-button figure {
-	margin: 0;
-	padding: 0;
-}
-
-button a {
-	color: inherit !important;
-	cursor: inherit;
-	text-decoration: inherit;
-}
-*/
-
 header {
 	position: sticky;
 	top: 0;
@@ -146,64 +127,6 @@ footer {
 	padding: .4em;
 	border-top: .1rem solid;
 	text-align: center;
-}
-
-@media (prefers-color-scheme: light), print {
-	:root {
-		scrollbar-color: #555 #AAAA;
-	}
-
-	body {
-		color: #000;
-		background: #FFF;
-	}
-
-	header, footer {
-		background: #EEE;
-	}
-
-	button {
-		color: #000;
-	}
-
-	:link, :link::after {
-		color: #00E;
-		background-image: linear-gradient(#00E, #00E);
-	}
-
-	:visited, :visited::after {
-		color: #518;
-		background-image: linear-gradient(#518, #518);
-	}
-
-	:any-link:active {
-		color: #B10;
-		background-image: linear-gradient(#B10, #B10);
-	}
-
-	.modal {
-		background: #CCC;
-	}
-
-	.modal:has(button#install:hover) {
-		background: #AAA;
-	}
-
-	.modal:has(button#install:active) {
-		background: #666;
-	}
-
-	button#install:hover {
-		color: #DDD;
-	}
-
-	button#install:active {
-		color: #FFF;
-	}
-
-	.modal .close:active span {
-		color: #FFF;
-	}
 }
 
 @media (prefers-color-scheme: dark) {
@@ -261,6 +184,64 @@ footer {
 
 	.modal .close:active span {
 		color: #AAA;
+	}
+}
+
+@media (prefers-color-scheme: light), print {
+	:root {
+		scrollbar-color: #555 #AAAA;
+	}
+
+	body {
+		color: #000;
+		background: #FFF;
+	}
+
+	header, footer {
+		background: #EEE;
+	}
+
+	button {
+		color: #000;
+	}
+
+	:link, :link::after {
+		color: #00E;
+		background-image: linear-gradient(#00E, #00E);
+	}
+
+	:visited, :visited::after {
+		color: #518;
+		background-image: linear-gradient(#518, #518);
+	}
+
+	:any-link:active {
+		color: #B10;
+		background-image: linear-gradient(#B10, #B10);
+	}
+
+	.modal {
+		background: #CCC;
+	}
+
+	.modal:has(button#install:hover) {
+		background: #AAA;
+	}
+
+	.modal:has(button#install:active) {
+		background: #666;
+	}
+
+	button#install:hover {
+		color: #DDD;
+	}
+
+	button#install:active {
+		color: #FFF;
+	}
+
+	.modal .close:active span {
+		color: #FFF;
 	}
 }
 
