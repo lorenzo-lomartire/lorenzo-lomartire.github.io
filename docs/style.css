@@ -81,7 +81,7 @@ a.logo, a.logo:hover {
 }
 
 .modal .close {
-	padding: 0.2em;
+	padding: 0.2em 0.5em;
 }
 
 button#install {
