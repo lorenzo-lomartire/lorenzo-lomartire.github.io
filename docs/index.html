@@ -80,10 +80,11 @@
 	</head>
 	<body>
 		<noscript>
-			<iframe src='https://www.googletagmanager.com/ns.html?id=GTM-TDK9KB9N'
+			<iframe title='Google Tag Manager'
+			        src='https://www.googletagmanager.com/ns.html?id=GTM-TDK9KB9N'
 			        height='0'
 			        width='0'
-			        style='display: none; visibility: hidden'></iframe>
+			        style='display: none; visibility: hidden;'></iframe>
 		</noscript>
 		<header>
 			<!--nav>
@@ -121,13 +122,16 @@
 					</figure>
 				</button>
 			</nav-->
-			<a aria-label='Home' class='logo' href='/'></a>
+			<a title='Home'
+			   aria-label='Home'
+			   class='logo'
+			   href='/'></a>
 		</header>
 		<div class='scroll'>
 			<main>
 				<h1>TITLE</h1>
 				<h2>SUBTITLE</h2>
-				<a href='#'>This is a link</a>
+				<a title='Just a test link' href='#'>This is a link</a>
 				CONTENT:
 				Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
 				Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur.
@@ -173,9 +177,9 @@
 				© 2024 Lorenzo Lomartire
 			</footer>
 		</div>
-		<div class='banner' hidden>
+		<dialog class='modal' hidden>
 			<button id='install'>Install</button>
 			<span class='close'>&times;</span>
-		</div>
+		</dialog>
 	</body>
 </html>

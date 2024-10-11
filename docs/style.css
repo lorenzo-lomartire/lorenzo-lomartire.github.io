@@ -73,9 +73,11 @@ a.logo, a.logo:hover {
 	border: none;
 }
 
-.banner {
+.modal {
 	position: fixed;
+	box-sizing: border-box;
 	width: 100%;
+	margin: 1em;
 }
 
 .banner .close {
