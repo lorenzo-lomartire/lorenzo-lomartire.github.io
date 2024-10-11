@@ -197,6 +197,10 @@ footer {
 		color: #B10;
 		background-image: linear-gradient(#B10, #B10);
 	}
+
+	dialog {
+		background: #CCC;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
@@ -226,6 +230,10 @@ footer {
 	:any-link:active {
 		color: #E22;
 		background-image: linear-gradient(#E22, #E22);
+	}
+
+	dialog {
+		background: #444;
 	}
 }
 
