@@ -217,6 +217,10 @@ footer {
 	.modal {
 		background: #CCC;
 	}
+
+	.modal:has(button#install:hover) {
+		background: #AAA;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
@@ -254,6 +258,10 @@ footer {
 
 	.modal {
 		background: #444;
+	}
+
+	.modal:has(button#install:hover) {
+		background: #666;
 	}
 }
 
