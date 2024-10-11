@@ -73,7 +73,7 @@ a.logo, a.logo:hover {
 	border: none;
 }
 
-.modal {
+.modal:not([hidden]) {
 	position: fixed;
 	width: calc(100% - 2em);;
 	margin: 1em;
