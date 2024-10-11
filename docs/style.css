@@ -97,10 +97,6 @@ button#install {
 	transition: .6s;
 }
 
-button#install:hover {
-	font-weight: 600;
-}
-
 /*
 button {
 	color: inherit;
@@ -126,48 +122,6 @@ header {
 	height: 4em;
 	border-bottom: .1rem solid;
 }
-
-/*
-nav {
-	margin: 0;
-	padding: 0;
-	display: flex;
-	align-items: center;
-}
-
-nav div.empty {
-	flex: 1;
-}
-
-nav button {
-	background: none;
-	border: none;
-	width: 8em;
-	height: 54px;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-}
-
-nav button figure {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-nav button figure figcaption {
-	font-variant: small-caps;
-}
-
-nav button .icon {
-	width: 2.5rem;
-}
-
-nav button .icon figcaption {
-	display: none;
-}
-*/
 
 main {
 	padding: .6em 1em;
@@ -222,6 +176,18 @@ footer {
 	.modal:has(button#install:hover) {
 		background: #AAA;
 	}
+
+	.modal:has(button#install:active) {
+		background: #666;
+	}
+
+	button#install:hover {
+		color: #DDD;
+	}
+
+	button#install:active {
+		color: #FFF;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
@@ -264,47 +230,19 @@ footer {
 	.modal:has(button#install:hover) {
 		background: #666;
 	}
-}
 
-/*
-body[theme='light'] {
-	background: white;
-	color: black;
-}
+	.modal:has(button#install:active) {
+		background: #AAA;
+	}
 
-body[theme='light'] a {
-	color: blue;
-}
+	button#install:hover {
+		color: #222;
+	}
 
-body[theme='light'] nav {
-	border-bottom: 1px solid black;
+	button#install:active {
+		color: #000;
+	}
 }
-
-body[theme='light'] footer {
-	border-top: 1px solid black;
-}
-
-body[theme='dark'] {
-	background: black;
-	color: white;
-}
-
-body[theme='dark'] a {
-	color: yellow;
-}
-
-body[theme='dark'] button img.mono {
-	filter: invert(1);
-}
-
-body[theme='dark'] nav {
-	border-bottom: 1px solid white;
-}
-
-body[theme='dark'] footer {
-	border-top: 1px solid white;
-}
-*/
 
 @media print {
 	:root {
