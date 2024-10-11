@@ -71,8 +71,9 @@ a.logo, a.logo:hover {
 
 .modal:not([hidden]) {
 	position: fixed;
-	width: calc(100% - 2em);;
+	width: calc(100% - 4em);
 	margin: 1em;
+	padding: 1em;
 	display: flex;
 	transition: .6s;
 }
