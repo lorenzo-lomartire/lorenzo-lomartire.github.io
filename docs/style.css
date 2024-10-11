@@ -21,6 +21,10 @@ body {
 	overscroll-behavior: none;
 }
 
+button {
+	font-size: inherit;
+}
+
 .noselect {
 	-webkit-touch-callout: none; /* iOS Safari */
 	-webkit-user-select: none; /* Safari */
