@@ -1,18 +1,6 @@
 <?xml version='1.0' standalone='no'?>
 <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
 <svg viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' width='50' height='50'>
-	<style>
-		@media (prefers-color-scheme: light) {
-			g {
-				fill: #000;
-			}
-		}
-		@media (prefers-color-scheme: dark) {
-			g {
-				fill: #FFF;
-			}
-		}
-	</style>
 	<g transform='translate(0,1024) scale(.1,-.1)'>
 		<path d='M4725 8839 c-88 -13 -161 -36 -249 -80 -559 -278 -1069 -1120 -1225
 -2023 -12 -65 -21 -131 -21 -147 0 -15 -5 -31 -10 -34 -23 -14 -200 -35 -297
