@@ -258,7 +258,7 @@ footer {
 		color: #000;
 	}
 
-	header {
+	header, .modal {
 		display: none;
 	}
 }
