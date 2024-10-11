@@ -268,7 +268,7 @@ footer {
 		color: #000;
 	}
 
-	header, .modal:not([hidden]) {
+	header, footer, .modal:not([hidden]) {
 		display: none;
 	}
 }
