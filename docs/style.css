@@ -67,6 +67,7 @@ a.logo {
 	border: none;
 	-webkit-mask: url('logo.svg') alpha center / contain no-repeat;
 	mask: url('logo.svg') alpha center / contain no-repeat;
+	-webkit-tap-highlight-color: transparent;
 }
 
 .modal:not([hidden]) {
