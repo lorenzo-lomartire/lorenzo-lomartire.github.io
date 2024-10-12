@@ -59,19 +59,19 @@
 		<meta http-equiv='content-language' content='en, it'>
 		<meta http-equiv='default-style' content='style.css'>
 		<meta http-equiv='content-security-policy'
-		      content="default-src 'self' https://mc.yandex.com/;
+		      content="default-src 'none';
 		      script-src 'none';
 		      script-src-elem 'self' https://www.googletagmanager.com https://mc.yandex.com;
 		      script-src-attr 'none';
 		      style-src 'self' https://fonts.googleapis.com;
 		      style-src-elem 'self' https://fonts.googleapis.com;
 		      style-src-attr 'none';
-		      img-src 'self' data:;
+		      img-src 'self' data: https://mc.yandex.com;
 		      connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://stats.g.doubleclick.net https://mc.yandex.com;
 		      font-src https://fonts.gstatic.com;
 		      object-src 'none';
 		      media-src 'none';
-		      frame-src 'none';
+		      frame-src 'self' https://mc.yandex.com/;
 		      child-src 'none';
 		      form-action 'none';
 		      base-uri 'self';
