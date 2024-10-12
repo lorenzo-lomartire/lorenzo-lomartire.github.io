@@ -163,10 +163,6 @@ footer {
 		background-image: linear-gradient(#E22, #E22);
 	}
 
-	a.logo {
-		color: #FFF;
-	}
-
 	.modal {
 		background: #444;
 	}
@@ -192,7 +188,8 @@ footer {
 	}
 
 	a.logo {
-		background: #FFF;
+		color: #FFF;
+		background: #FFF !important;
 	}
 }
 
@@ -229,10 +226,6 @@ footer {
 		background-image: linear-gradient(#B10, #B10);
 	}
 
-	a.logo {
-		color: #000;
-	}
-
 	.modal {
 		background: #CCC;
 	}
@@ -258,7 +251,8 @@ footer {
 	}
 
 	a.logo {
-		background: #000;
+		color: #000;
+		background: #000 !important;
 	}
 }
 
