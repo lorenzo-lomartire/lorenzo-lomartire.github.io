@@ -4,7 +4,7 @@
 		<title>Lorenzo Lomartire</title>
 		<base href='https://lorenzo-lomartire.github.io/' target='_self'>
 		<script src='https://www.googletagmanager.com/gtag/js?id=G-GMTBSPBHXL' type='text/javascript' async defer></script>
-		<script>
+		<script type='text/javascript'>
 			window.dataLayer = window.dataLayer || [];
 			function gtag() {
 				dataLayer.push(arguments);
@@ -12,7 +12,7 @@
 			gtag('js', new Date());
 			gtag('config', 'G-GMTBSPBHXL');
 		</script>
-		<script>
+		<script type='text/javascript'>
 			(function(w,d,s,l,i) {
 				w[l] = w[l] || [];
 				w[l].push({
@@ -27,6 +27,26 @@
 				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
 				f.parentNode.insertBefore(j, f);
 			})(window, document, 'script', 'dataLayer', 'GTM-TDK9KB9N');
+		</script>
+		<script type='text/javascript'>
+			(function(m, e, t, r, i, k, a) {
+				m[i] = m[i] || function() {
+					(m[i].a = m[i].a || []).push(arguments);
+				};
+				m[i].l = 1 * new Date();
+				for (let j = 0; j < document.scripts.length; j++) {
+					if (document.scripts[j].src === r)
+						return;
+				}
+				k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src=r, a.parentNode.insertBefore(k,a);
+			})(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+			ym(98617189, 'init', {
+				clickmap: true,
+				trackLinks: true,
+				accurateTrackBounce: true,
+				webvisor: true,
+				ecommerce: 'dataLayer'
+			});
 		</script>
 		<script src='script.js' type='text/javascript' async defer></script>
 		<meta charset='UTF-8'>
@@ -86,6 +106,11 @@
 			        height='0'
 			        width='0'
 			        style='display: none; visibility: hidden;'></iframe>
+		</noscript>
+		<noscript>
+			<div>
+				<img src='https://mc.yandex.ru/watch/98617189' style='position:absolute; left:-9999px;' alt=''>
+			</div>
 		</noscript>
 		<header>
 			<!--nav>
