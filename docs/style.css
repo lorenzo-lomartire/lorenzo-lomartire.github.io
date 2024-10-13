@@ -80,41 +80,31 @@ dialog[open] {
 	transition: .6s;
 }
 
-.modal:not([hidden]) {
-	position: fixed;
-	width: calc(100% - 4em);
-	margin: 1em;
-	padding: 1em;
-	display: flex;
-	border-radius: .8em;
-	transition: .6s;
-}
-
-.modal:has(button#install:hover) {
+dialog:has(button.content:hover) {
 	border-radius: 1.2em;
 }
 
-.modal:has(button#install:active) {
+dialog:has(button.content:active) {
 	border-radius: 1.6em;
 }
 
-.modal .close {
+dialog .close {
 	padding: .2em .5em;
 	background: none;
 	border: none;
 	transition: .6s;
 }
 
-.modal .close span {
+dialog .close span {
 	display: block;
 	transition: .6s;
 }
 
-.modal .close:hover span {
+dialog .close:hover span {
 	transform: rotate(180deg);
 }
 
-button#install {
+button.content {
 	margin: 0 auto;
 	border: none;
 	background: none;
@@ -174,27 +164,27 @@ footer {
 		background-image: linear-gradient(#E22, #E22);
 	}
 
-	.modal {
+	dialog {
 		background: #444;
 	}
 
-	.modal:has(button#install:hover) {
+	dialog:has(button.content:hover) {
 		background: #666;
 	}
 
-	.modal:has(button#install:active) {
+	dialog:has(button.content:active) {
 		background: #AAA;
 	}
 
-	button#install:hover {
+	button.content:hover {
 		color: #DDD;
 	}
 
-	button#install:active {
+	button.content:active {
 		color: #000;
 	}
 
-	.modal .close:active span {
+	dialog .close:active span {
 		color: #AAA;
 	}
 
@@ -237,27 +227,27 @@ footer {
 		background-image: linear-gradient(#B10, #B10);
 	}
 
-	.modal {
+	dialog {
 		background: #CCC;
 	}
 
-	.modal:has(button#install:hover) {
+	dialog:has(button.content:hover) {
 		background: #AAA;
 	}
 
-	.modal:has(button#install:active) {
+	dialog:has(button.content:active) {
 		background: #666;
 	}
 
-	button#install:hover {
+	button.content:hover {
 		color: #DDD;
 	}
 
-	button#install:active {
+	button.content:active {
 		color: #FFF;
 	}
 
-	.modal .close:active span {
+	dialog .close:active span {
 		color: #FFF;
 	}
 
@@ -274,7 +264,7 @@ footer {
 		background: 0;
 	}
 
-	.modal:not([hidden]) {
+	dialog {
 		border: .1em solid;
 	}
 }
@@ -284,7 +274,7 @@ footer {
 		font-family: 'Noto Serif', serif;
 	}
 
-	header, footer, .modal:not([hidden]) {
+	header, footer, dialog {
 		display: none;
 	}
 }
