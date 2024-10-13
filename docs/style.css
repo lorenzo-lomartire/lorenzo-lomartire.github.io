@@ -70,6 +70,16 @@ a.logo {
 	-webkit-tap-highlight-color: transparent;
 }
 
+dialog[open] {
+	position: fixed;
+	width: calc(100% - 4em);
+	margin: 1em;
+	padding: 1em;
+	display: flex;
+	border-radius: .8em;
+	transition: .6s;
+}
+
 .modal:not([hidden]) {
 	position: fixed;
 	width: calc(100% - 4em);
