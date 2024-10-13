@@ -1,12 +1,3 @@
-/*
-Array.from(document.getElementsByClassName('close')).forEach(element => {
-	element.addEventListener('click', (event) => {
-		event.stopPropagation();
-		element.parentElement.setAttribute('hidden', '');
-	});
-});
-*/
-
 const installDialog = document.getElementById('install');
 let installPrompt = null;
 
@@ -28,10 +19,6 @@ window.addEventListener('appinstalled', () => {
 });
 
 /*
-if (location.toString() !== location.origin + '/') {
-	location.replace(location.origin + '/');
-}
-
 if ('serviceWorker' in navigator) {
 	navigator.serviceWorker.register('/service-worker.js').then(function(registration) {}).catch(function(error) {
 		console.error('Service Worker registration failed:', error);
