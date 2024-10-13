@@ -1,30 +1,31 @@
+/*
 Array.from(document.getElementsByClassName('close')).forEach(element => {
 	element.addEventListener('click', (event) => {
 		event.stopPropagation();
 		element.parentElement.setAttribute('hidden', '');
 	});
 });
+*/
 
-const installButton = document.getElementById('install');
+const installDialog = document.getElementById('install');
 let installPrompt = null;
 
 window.addEventListener('beforeinstallprompt', async (event) => {
 	event.preventDefault();
 	installPrompt = event;
-	installButton.parentElement.removeAttribute('hidden');
+	installDialog.show();
 });
 
-installButton.addEventListener('click', async () => {
+installDialog.addEventListener('close', async () => {
 	if (!installPrompt)
 		return;
 	await installPrompt.prompt();
 	installPrompt = null;
-	installButton.parentElement.setAttribute('hidden', '');
 });
 
 window.addEventListener('appinstalled', () => {
 	installPrompt = null;
-	installButton.parentElement.setAttribute('hidden', '');
+	installDialog.close();
 });
 
 /*
