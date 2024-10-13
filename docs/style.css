@@ -147,6 +147,7 @@ footer {
 
 	button {
 		color: #FFF;
+		background: #222;
 	}
 
 	:link, :link::after {
@@ -165,6 +166,7 @@ footer {
 	}
 
 	dialog {
+		color: #FFF;
 		background: #444;
 	}
 
@@ -210,6 +212,7 @@ footer {
 
 	button {
 		color: #000;
+		background: #EEE;
 	}
 
 	:link, :link::after {
@@ -228,6 +231,7 @@ footer {
 	}
 
 	dialog {
+		color: #000;
 		background: #CCC;
 	}
 
