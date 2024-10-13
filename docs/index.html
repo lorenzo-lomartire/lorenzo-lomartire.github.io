@@ -167,10 +167,12 @@
 			   href='/'></a>
 		</header>
 		<div class='scroll'>
-			<div class='modal' hidden>
-				<button id='install'>Install Progressive Web Application</button>
-				<button class='close'><span>&times;</span></button>
-			</div>
+			<dialog id='install'>
+				<form method='dialog'>
+					<button class='content'>Install Progressive Web Application</button>
+					<button class='close'><span>&times;</span></button>
+				</form>
+			</dialog>
 			<dialog open>
 				<form method='dialog'>
 					We use cookies to enhance your browsing experience, serve personalized content and analyze our traffic.<br>
