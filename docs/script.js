@@ -17,9 +17,8 @@ window.addEventListener('beforeinstallprompt', async (event) => {
 });
 
 installDialog.addEventListener('close', async () => {
-	if (!installPrompt)
-		return;
-	await installPrompt.prompt();
+	if (installDialog.returnValue === 'install' && installPrompt)
+		await installPrompt.prompt();
 	installPrompt = null;
 });
 
