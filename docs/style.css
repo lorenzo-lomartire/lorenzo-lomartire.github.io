@@ -22,8 +22,8 @@ body {
 }
 
 button {
-	margin: 1em;
-	padding: 1em;
+	/*margin: 1em;
+	padding: 1em;*/
 	font-size: inherit;
 	border-radius: .8em;
 }
