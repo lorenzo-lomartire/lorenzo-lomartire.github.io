@@ -22,6 +22,8 @@ body {
 }
 
 button {
+	margin: 1em;
+	padding: 1em;
 	font-size: inherit;
 	border-radius: .8em;
 }
@@ -71,14 +73,17 @@ a.logo {
 	-webkit-tap-highlight-color: transparent;
 }
 
-dialog[open] {
+dialog {
 	position: fixed;
 	width: calc(100% - 4em);
 	margin: 1em;
 	padding: 1em;
-	display: flex;
 	border-radius: .8em;
 	transition: .6s;
+}
+
+dialog[open] {
+	display: flex;
 }
 
 dialog:has(button.content:hover) {
