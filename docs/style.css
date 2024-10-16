@@ -22,7 +22,7 @@ body {
 }
 
 button {
-	margin: 0 .2em;
+	margin: .2em 0;
 	padding: .2em .5em;
 	font-size: inherit;
 	border-radius: .8em;
@@ -77,9 +77,8 @@ dialog {
 	position: fixed;
 	width: calc(100% - 4em);
 	margin: 1em;
-	padding: 1em .5em;
+	padding: 1em;
 	border-radius: .8em;
-	text-align: justify;
 	transition: .6s;
 }
 
@@ -117,6 +116,10 @@ button.content {
 	border: none;
 	background: none;
 	transition: .6s;
+}
+
+legend {
+	text-align: justify;
 }
 
 header {
