@@ -79,6 +79,7 @@ dialog {
 	margin: 1em;
 	padding: 1em .5em;
 	border-radius: .8em;
+	text-align: justify;
 	transition: .6s;
 }
 
