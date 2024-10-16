@@ -22,8 +22,8 @@ body {
 }
 
 button {
-	/*margin: 1em;
-	padding: 1em;*/
+	margin: 0;
+	padding: .2em .5em;
 	font-size: inherit;
 	border-radius: .8em;
 }
@@ -95,6 +95,7 @@ dialog:has(button.content:active) {
 }
 
 dialog .close {
+	margin: 0;
 	padding: .2em .5em;
 	background: none;
 	border: none;
