@@ -77,7 +77,7 @@ dialog {
 	position: fixed;
 	width: calc(100% - 4em);
 	margin: 1em;
-	padding: 1em;
+	padding: .6em 1.2em;
 	border-radius: .8em;
 	transition: .6s;
 }
