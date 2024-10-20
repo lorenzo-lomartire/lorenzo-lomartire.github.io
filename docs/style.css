@@ -63,7 +63,7 @@ button {
 	outline: auto;
 }
 
-a.logo {
+.logo {
 	display: block;
 	height: 100%;
 	aspect-ratio: 1 / 1;
@@ -144,7 +144,6 @@ footer {
 
 .informer {
 	border: 0;
-	background: none;
 }
 
 .informer img {
@@ -182,7 +181,7 @@ footer {
 		background-image: linear-gradient(#A5D, #A5D);
 	}
 
-	:any-link:active:not(.logo) {
+	:any-link:active {
 		color: #E22;
 		background-image: linear-gradient(#E22, #E22);
 	}
@@ -212,9 +211,13 @@ footer {
 		color: #AAA;
 	}
 
-	a.logo {
+	.logo {
 		color: #FFF;
 		background: #FFF;
+	}
+	
+	.informer {
+		background: none;
 	}
 }
 
@@ -247,7 +250,7 @@ footer {
 		background-image: linear-gradient(#518, #518);
 	}
 
-	:any-link:active:not(.logo) {
+	:any-link:active {
 		color: #B10;
 		background-image: linear-gradient(#B10, #B10);
 	}
@@ -277,9 +280,13 @@ footer {
 		color: #FFF;
 	}
 
-	a.logo {
+	.logo {
 		color: #000;
 		background: #000;
+	}
+	
+	.informer {
+		background: none;
 	}
 }
 
