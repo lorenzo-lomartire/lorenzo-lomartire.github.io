@@ -154,6 +154,7 @@ footer {
 
 @media (prefers-color-scheme: dark) {
 	:root {
+		color-scheme: dark;
 		scrollbar-color: #DDD #EEEA;
 	}
 
@@ -223,6 +224,7 @@ footer {
 
 @media (prefers-color-scheme: light), print {
 	:root {
+		color-scheme: light;
 		scrollbar-color: #555 #AAAA;
 	}
 
