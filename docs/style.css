@@ -181,7 +181,7 @@ footer {
 		background-image: linear-gradient(#A5D, #A5D);
 	}
 
-	:any-link:active {
+	:any-link:active:not(.logo):not(.informer) {
 		color: #E22;
 		background-image: linear-gradient(#E22, #E22);
 	}
@@ -250,7 +250,7 @@ footer {
 		background-image: linear-gradient(#518, #518);
 	}
 
-	:any-link:active {
+	:any-link:active:not(.logo):not(.informer) {
 		color: #B10;
 		background-image: linear-gradient(#B10, #B10);
 	}
