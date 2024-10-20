@@ -207,6 +207,12 @@ footer {
 	}
 }
 
+.informer {
+	width: 88px;
+	height: 31px;
+	border: 0;
+}
+
 @media (prefers-color-scheme: light), print {
 	:root {
 		scrollbar-color: #555 #AAAA;
